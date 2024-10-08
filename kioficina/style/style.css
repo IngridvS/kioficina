@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'PACE';
+    src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
+    url('../fonts/pace-racing-car/PACE-Italic.woff') format('wotf'),
+    url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
+    url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Sofast';
+    src: url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff2') format('woff2'),
+    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff') format('woff'),
+    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.ttf') format('truetype'),
+    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fontNoCorpo: "Sofast";
+    --titulos: 'PACE';
+    --corDoTexto: #4B4B4B;
+    --corDeFundo: #101010;
+    --titulos-color: #fff;
+    --border-color: #fff;
+    --white-color: #fff;
+    --black-color: #000000;
+    --primary-color: #FFFF00;
+}
+
+h6{
+    font-size: 20px;
+}
+
+.site {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    height: 1000px;
+    width: 100%;
+    background-image: url(../img/hero_slider_bg_1.png)
+}
+
+header .site{
+    backdrop-filter: blur(8px);
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>div:nth-child(1){
+    padding: 15px;
+}
+
+.logo a {
+    display: block;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 153px;
+    display: block;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 15px;        
+    color: #fff;
+}
+
+.menu ul li a{
+    font-family: var(--fontNoCorpo);
+    font-size: .8em;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.telefone a {
+    display: flex;            
+    align-items: center;  
+    text-decoration: none;
+    font-family: var(--fontNoCorpo);
+    color: #ffff;
+
+}
+
+.telefone span {
+    background: #FFFF00;
+    display: flex;          
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;       
+    padding: 10px;           
+    margin-right: 10px;       
+    cursor: pointer;          
+    z-index: 1;   
+    position: relative; 
+    font-family: var(--fontNoCorpo);
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
