@@ -113,5 +113,36 @@ header>div:nth-child(1){
     font-family: var(--fontNoCorpo);
     animation-duration: 2s; /* don't forget to set a duration! */
 }
+.telefone span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: wave 1.5s infinite;
+    z-index: 0;
+}
+ 
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+ 
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+ 
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+ 
 
 
