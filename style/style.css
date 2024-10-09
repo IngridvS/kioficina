@@ -42,7 +42,7 @@ h6{
 header{
     height: 1000px;
     width: 100%;
-    background-image: url(../img/hero_slider_bg_1.png)
+ 
 }
 
 header .site{
@@ -143,6 +143,23 @@ header>div:nth-child(1){
         opacity: 0;
     }
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+}
  
+.swiper{
+    height: 500px;
+    .swiper-slide{
+        background: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:60px;
+
+
+    }
+}
+
 
 
