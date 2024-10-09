@@ -17,6 +17,7 @@
     font-style: normal;
 }
 
+
 :root {
     --fontNoCorpo: "Sofast";
     --titulos: 'PACE';
@@ -31,22 +32,28 @@
 
 h6{
     font-size: 20px;
+    
+}
+.site {
+    width: 100%;
+    max-width: 1200px;
+
 }
 
 .site {
-    max-width: 1200px;
-    width: 100%;
+    backdrop-filter: blur(8px);
     margin: 0 auto;
 }
 
 header{
-    height: 1000px;
+    height: 100%;
     width: 100%;
  
 }
 
 header .site{
     backdrop-filter: blur(8px);
+    width: 100%;
 }
 
 header>div {
@@ -143,23 +150,58 @@ header>div:nth-child(1){
         opacity: 0;
     }
 }
-.swiper {
-    width: 600px;
-    height: 300px;
+
+.banner {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: var(--titulos-color);
 }
- 
-.swiper{
-    height: 500px;
-    .swiper-slide{
-        background: #ccc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size:60px;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicos {
+    padding: 40px 0px;
+}
+
+.servicos .site {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servicos .conteudoServicos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicos .conteudoServicos div {
+    width: 370px;
+    height: 580px;
+    border: #F27405 solid 2px;
+    background: #f2870520;
+    overflow: hidden;
+    /* hidden corta o texto dentro da div e o scroll coloca efeito rolagem de texto */
+
+}
 
 
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
