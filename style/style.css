@@ -1,22 +1,30 @@
 @font-face {
     font-family: 'PACE';
     src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
-    url('../fonts/pace-racing-car/PACE-Italic.woff') format('wotf'),
-    url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
-    url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family:'Sofast';
-    src: url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff2') format('woff2'),
-    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff') format('woff'),
-    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.ttf') format('truetype'),
-    url('../fonts/sofast-racing-car/Sofast Regular/Sofast.otf') format('opentype');
+        url('../fonts/pace-racing-car/PACE-Italic.woff') format('wotf'),
+        url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Sofast';
+    src: url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff2') format('woff2'),
+        url('../fonts/sofast-racing-car/Sofast Regular/Sofast.woff') format('woff'),
+        url('../fonts/sofast-racing-car/Sofast Regular/Sofast.ttf') format('truetype'),
+        url('../fonts/sofast-racing-car/Sofast Regular/Sofast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Impede a rolagem lateral */
+}
 
 :root {
     --fontNoCorpo: "Sofast";
@@ -30,40 +38,46 @@
     --primary-color: #FFFF00;
 }
 
-h6{
-    font-size: 20px;
-    
-}
 .site {
     width: 100%;
     max-width: 1200px;
-
-}
-
-.site {
-    backdrop-filter: blur(8px);
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-header{
-    height: 100%;
+
+hr {
+    font-size: 20px;
+    background-color: #FFFF00;
+}
+
+header {
+    position: absolute;
+    /* header sobre o banner */
+    top: 0;
+    left: 0;
     width: 100%;
- 
-}
-
-header .site{
+    z-index: 10;
     backdrop-filter: blur(8px);
-    width: 100%;
+    padding: 15px;
+
 }
 
-header>div {
+header .site {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+
+
 }
 
-header>div:nth-child(1){
-    padding: 15px;
+header .logo {
+    width: 172px;
+    height: 100px;
+    text-indent: -9999px;
+    margin: 5px 0;
+
 }
 
 .logo a {
@@ -82,24 +96,25 @@ header>div:nth-child(1){
     display: flex;
     justify-content: space-around;
 }
-.menu ul li{
+
+.menu ul li {
     list-style: none;
     text-transform: uppercase;
-    margin: 15px;        
+    margin: 15px;
     color: #fff;
 }
 
-.menu ul li a{
+.menu ul li a {
     font-family: var(--fontNoCorpo);
     font-size: .8em;
     color: #fff;
     text-decoration: none;
-    
+
 }
 
 .telefone a {
-    display: flex;            
-    align-items: center;  
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-family: var(--fontNoCorpo);
     color: #ffff;
@@ -108,18 +123,20 @@ header>div:nth-child(1){
 
 .telefone span {
     background: #FFFF00;
-    display: flex;          
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;       
-    padding: 10px;           
-    margin-right: 10px;       
-    cursor: pointer;          
-    z-index: 1;   
-    position: relative; 
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
     font-family: var(--fontNoCorpo);
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 2s;
+    /* don't forget to set a duration!  */
 }
+
 .telefone span::after {
     content: '';
     position: absolute;
@@ -133,18 +150,18 @@ header>div:nth-child(1){
     animation: wave 1.5s infinite;
     z-index: 0;
 }
- 
+
 @keyframes wave {
     0% {
         transform: translate(-50%, -50%) scale(0);
         opacity: 1;
     }
- 
+
     50% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0;
     }
- 
+
     100% {
         transform: translate(-50%, -50%) scale(0);
         opacity: 0;
@@ -152,56 +169,181 @@ header>div:nth-child(1){
 }
 
 .banner {
-    position: absolute;
-    z-index: -1;
+    position: relative;
     width: 100%;
     left: 0;
     top: 0;
-    color: var(--titulos-color);
+
+
+}
+
+.banner div img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    right: 44px;
+    z-index: 100;
+    border: none;
+    width: 61px;
+    height: 63px;
+    backdrop-filter: blur(100px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50% 50% 50% 50%;
+    color: #fff;
+    opacity: .50;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner .slick-prev::before,
+.banner .slick-next::before {
+    position: absolute;
+    font-size: 53px;
+    opacity: .50;
+    color: #F27405;
+}
+
+
+.slick-prev {
+    top: 86%;
+    right: 120px;
+
+}
+
+.slick-next {
+    top: 86%;
+
+}
+
+.slick-prev:before {
+    content: "<";
+}
+
+.slick-next:before {
+    content: ">";
+}
+
+
+.slick-dots {
+    position: absolute;
+
+    right: 5px;
+    z-index: 100;
+    top: 47%;
+    opacity: .50;
+    backdrop-filter: blur(8px);
+}
+
+.slick-dots li {
+    margin: 0 0 20px;
+    gap: 50px;
+}
+
+
+.slick-dots li button {
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    color: #F27405;
+    font-size: 20pt;/
+}
+
+
+.slick-dots li button:before {
+    font-size: 20pt;
+    opacity: 1;
+}
+
+
+
+
+.servicos {
+    padding: 50px 0;
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 2;
+}
+
+
+.servicos .organiza {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 442px;
+    width: 106%;
+}
+
+.servicos .organiza .caixa {
+    width: 408px;
+    height: 430px;
+
+}
+
+.caixa>div {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.caixa .inf {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    padding: 42px 24px;
+    text-align: center;
+    font-size: 16px;
+    height: 73%;
+    color: #fff;
+
+}
+
+.linha {
+    height: 1px;
+    width: 49%;
+}
+
+
+
+
+
+/* h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    color: #fff;
+} 
+
+
+
+
+ h6{
+    font-size: 20px;
+    
 }
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-.servicos {
-    padding: 40px 0px;
-}
-
-.servicos .site {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.servicos .conteudoServicos {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.servicos .conteudoServicos div {
-    width: 370px;
-    height: 580px;
-    border: #F27405 solid 2px;
-    background: #f2870520;
-    overflow: hidden;
-    /* hidden corta o texto dentro da div e o scroll coloca efeito rolagem de texto */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 
