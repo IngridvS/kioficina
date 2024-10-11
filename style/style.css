@@ -104,7 +104,7 @@ header {
     /* header sobre o banner */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 97%;
     z-index: 10;
     backdrop-filter: blur(8px);
     padding: 15px;
@@ -175,7 +175,7 @@ header .logo {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    padding: 10px;
+    padding: 2px;
     margin-right: 10px;
     cursor: pointer;
     z-index: 1;
@@ -449,6 +449,72 @@ a button{
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
    
+}
+.service{
+  
+    background-color: #1b1b1b;
+    width: 100%;
+}
+.service .site{
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.service .site>div{
+    width: 72%;
+
+}
+.service .site div h2{
+    margin: 0 0 14px;
+    font-weight: 800;
+    color: var(--titulos-color);
+    text-transform: uppercase;
+    font-family: var(--titulos);
+}
+.service .site div p{
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: var(--white-color);
+}
+
+.service .site .espacomin{
+    height: 40px;
+}
+
+.card{
+    justify-content: space-between;
+    gap: 26px;
+    display: flex;
+}
+.card a{
+    text-decoration: none;
+    
+}
+.service .site a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.service .site div hr{
+    width: 102px;
+    position: absolute;
+}
+
+
+
+.card a h3{
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+    font-family: var(--fontNoCorpo);
+    color: var(--titulos-color);
+    font-size: 23px;
+
+}
+.card a img{
+    max-height: 290px;
+    height: 99%;
 }
 
 
