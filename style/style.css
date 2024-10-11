@@ -38,6 +38,7 @@ html {
     --primary-color: #FFFF00;
 }
 
+
 .site {
     width: 100%;
     max-width: 1200px;
@@ -45,10 +46,57 @@ html {
     padding: 0 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+  line-height: normal;
+  font-style: normal;
+}
+ 
+h1 {
+  font-size: 62px;
+}
+ 
+h2 {
+  font-size: 48px;
+}
+ 
+h3 {
+  font-size: 36px;
+}
+ 
+h4 {
+  font-size: 28px;
+}
+ 
+h5 {
+  font-size: 24px;
+}
+ 
+h6 {
+  font-size: 20px;
+}
+ 
+p {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 
 hr {
     font-size: 20px;
-    background-color: #FFFF00;
+    color: #fff;
 }
 
 header {
@@ -235,7 +283,6 @@ header .logo {
 
 .slick-dots {
     position: absolute;
-
     right: 5px;
     z-index: 100;
     top: 47%;
@@ -249,21 +296,25 @@ header .logo {
 }
 
 
+.slick-dots li.slick-active button {
+    transform: scale(1.2); 
+    
+}
+
+
 .slick-dots li button {
     border: none;
     background: rgba(0, 0, 0, 0.1);
     width: 30px;
     height: 30px;
-    color: #F27405;
-    font-size: 20pt;/
+    color: #fff;
+    font-size: 20pt;
 }
 
 
 .slick-dots li button:before {
-    font-size: 20pt;
-    opacity: 1;
+    font-size: 28pt;
 }
-
 
 
 
@@ -308,15 +359,102 @@ header .logo {
     padding: 42px 24px;
     text-align: center;
     font-size: 16px;
-    height: 73%;
+    height: 65%;
     color: #fff;
 
 }
 
 .linha {
     height: 1px;
-    width: 49%;
+    width: 100%;
+    background: #fff;
 }
+span{
+    width: 50px;
+    height: 50px;
+    
+}
+
+h4{
+    top: 52%;
+   color: #F27405;
+}
+.espaco{
+    height: 125px;
+    background-color: #1b1b1b;
+
+
+}
+.sobre{
+  
+    background-color: #1b1b1b;
+    width: 100%;
+}
+.sobre .site{
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sobre .site div h2{
+    margin: 0 0 14px;
+    font-weight: 800;
+    color: var(--titulos-color);
+    text-transform: uppercase;
+    font-family: var(--titulos);
+}
+.sobre .site div p{
+    color: var(--titulos-color);
+    font-size: 13pt;
+}
+.espacomin{
+    height: 64px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    text-transform: uppercase;
+   
+}
+.text h3{
+    -webkit-text-stroke: 1px var(--titulos-color);
+    font-size: 35px;
+
+    
+}
+a button{
+    padding: 15px 53px;
+    background-color: #F27405;
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 200;
+}
+
+ .img_circle{
+    position: relative;
+    left: -12%;
+    z-index: 10;
+    top: 75%;
+    
+}
+.text_fundo{
+    z-index: 9;
+    opacity: 0.3;
+    position: relative;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #222 0%, #fff 50%, #222 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+
 
 
 
