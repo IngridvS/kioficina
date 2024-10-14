@@ -170,7 +170,7 @@ header .logo {
 }
 
 .telefone span {
-    background: #FFFF00;
+    background-color: rgb(212, 130, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,6 +194,7 @@ header .logo {
     height: 100px;
     background: var(--primary-color);
     border-radius: 50%;
+    background-color: rgb(212, 130, 1);
     transform: translate(-50%, -50%) scale(0);
     animation: wave 1.5s infinite;
     z-index: 0;
@@ -225,7 +226,7 @@ header .logo {
 
 }
 
-.banner div img {
+.banner img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -233,6 +234,7 @@ header .logo {
 
 .slick-prev,
 .slick-next {
+    font-size: 0;
     position: absolute;
     right: 44px;
     z-index: 100;
@@ -243,12 +245,15 @@ header .logo {
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease-in-out;
     border-radius: 50% 50% 50% 50%;
-    color: #fff;
-    opacity: .50;
+    background-color: #FFFF00;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+
+
+
 
 }
 
@@ -256,8 +261,7 @@ header .logo {
 .banner .slick-next::before {
     position: absolute;
     font-size: 53px;
-    opacity: .50;
-    color: #F27405;
+
 }
 
 
@@ -340,6 +344,7 @@ header .logo {
 
 }
 
+
 .caixa>div {
 
     display: flex;
@@ -359,10 +364,71 @@ header .logo {
     padding: 42px 24px;
     text-align: center;
     font-size: 16px;
-    height: 65%;
+    height: 202px;
     color: #fff;
 
 }
+
+.caixa .numero_item h4 {
+    font-size: 35px;
+    padding-right: 15px;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFF00;
+}
+
+.caixa div h4 {
+    color: var(--titulos-color);
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+
+
+.destaque-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 45px 35px;
+    text-align: center;
+    font-size: 16px;
+    height: 200px;
+
+
+
+
+
+}
+
+.destaque_icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(212, 130, 1);
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.destaque_icon span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgb(212, 130, 1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: wave 1.5s infinite;
+    z-index: 0;
+}
+
+
+
+
 
 .linha {
     height: 1px;
@@ -388,57 +454,74 @@ h4 {
 
 }
 
-.sobre {
+.escolha {
 
     background-color: #1b1b1b;
     width: 100%;
 }
 
-.sobre .site {
+.escolha .site {
     display: -webkit-flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.sobre .site div h2 {
-    margin: 0 0 14px;
-    font-weight: 800;
-    color: var(--titulos-color);
+.escolha .site div h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    z-index: 10;
+    position: relative;
+    color: var(--primary-color);
     text-transform: uppercase;
     font-family: var(--titulos);
 }
+.escolha .site div p {
+    font-family: var(--titulos-color);
+    font-size: 20px;
+    line-height: 1.5em;
+    max-width: 600px;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+    color: var(--white-color);
+}
+.escolha .site div .text {
+    gap: 34px;
+    h3 {
+        font-size: 25px;
+        font-family: var(--fontNoCorpo);
+        color: transparent;
+        -webkit-text-stroke: 1px var(--primary-color);
+        transition: all 0.3s;
+        cursor: pointer;
+        letter-spacing: .2em;
+    }
 
-.sobre .site div p {
-    color: var(--titulos-color);
-    font-size: 13pt;
+    h3:hover {
+        -webkit-text-stroke: 1px var(--titulos-color);
+    }
 }
 
 .espacomin {
     height: 64px;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-    text-transform: uppercase;
-
-}
-
-.text h3 {
-    -webkit-text-stroke: 1px var(--titulos-color);
-    font-size: 35px;
-
-
-}
 
 a button {
     padding: 15px 53px;
-    background-color: #F27405;
-    color: var(--white-color);
+    background-color: var(--primary-color);
+    color: #D48201;
     font-size: 24px;
     font-weight: 200;
 }
+.escolha .site  a button{
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    background-color: #D48201;
+    color: var(--white-color);
+    transform: translate3d(0px, -7px, 0.01px);
+}
+
 
 .img_circle {
     position: relative;
@@ -451,15 +534,36 @@ a button {
 .text_fundo {
     z-index: 9;
     opacity: 0.3;
-    position: relative;
-    font-size: 70px;
+    position: absolute;
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 100px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
+    display: inline;
     background: linear-gradient(to right, #222 0%, #fff 50%, #222 100%);
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animaTextoFundo 2.5s infinite;
     background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: rgba(46, 46, 46, 0.7960784314);
+    -ms-background-size: 200px 100%;
+    background-size: 200px 100%;
 
+}
+
+@keyframes animaTextoFundo {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
 }
 
 .service {
@@ -584,15 +688,16 @@ a button {
     }
 }
 
-.logo_client{
+.logo_client {
     background-color: #1b1b1b;
     width: 100%;
 }
-.logo_client .site { 
+
+.logo_client .site {
     width: 100%;
 }
 
-.logo_client  h4 {
+.logo_client h4 {
     text-align: center;
     padding: 0 0 70px;
     font-weight: bold;
@@ -604,17 +709,18 @@ a button {
 
 .logo_client .clientes .slick-slide {
     margin: 0 20px;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
 }
 
 
 .logo_client .clientes .slick-slide img {
-    width: auto;           
-    height: auto;          
-    max-width: 100%;       
-    max-height: 150px;    
-    object-fit: contain;   /* imagem não fica esticada */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    /* imagem não fica esticada */
 }
 
 
@@ -636,25 +742,62 @@ a button {
     float: left;
     height: 100%;
     min-height: 1px;
-    display: block !important; 
+    display: block !important;
 }
 
 
 .logo_client .clientes .slick-slide img {
     display: block;
-    max-height: 100px; 
+    max-height: 100px;
 }
 
 
 .logo_client .clientes .slick-initialized .slick-slide {
     display: block !important;
 }
-.logo_client .clientes .slick-loading .slick-slide{
+
+.logo_client .clientes .slick-loading .slick-slide {
     visibility: hidden;
 }
 
 
+.ceo {
+    background-color: #1b1b1b;
+    width: 100%;
+}
 
+.ceo .site {
+
+
+    width: 100%;
+}
+
+.fts_ceo>div {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.fts_ceo .caixa2 .primeira {
+    position: absolute;
+    position: relative;
+    left: 42%;
+}
+
+.fts_ceo .caixa2 .segunda {
+    z-index: 10;
+    top: -62px;
+    position: relative;
+}
+
+
+
+.dados {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+}
 
 
 
