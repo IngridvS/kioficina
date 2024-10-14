@@ -52,45 +52,45 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both;
-  color: var(--heading-color);
-  font-family: var(--heading-font-family);
-  padding: 0px;
-  margin: 0px;
-  font-weight: 700;
-  line-height: normal;
-  font-style: normal;
+    clear: both;
+    color: var(--heading-color);
+    font-family: var(--heading-font-family);
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
 }
- 
+
 h1 {
-  font-size: 62px;
+    font-size: 62px;
 }
- 
+
 h2 {
-  font-size: 48px;
+    font-size: 48px;
 }
- 
+
 h3 {
-  font-size: 36px;
+    font-size: 36px;
 }
- 
+
 h4 {
-  font-size: 28px;
+    font-size: 28px;
 }
- 
+
 h5 {
-  font-size: 24px;
+    font-size: 24px;
 }
- 
+
 h6 {
-  font-size: 20px;
+    font-size: 20px;
 }
- 
+
 p {
-  margin: 0px;
-  padding: 0px;
-  font-weight: 400;
-  line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 
@@ -297,8 +297,8 @@ header .logo {
 
 
 .slick-dots li.slick-active button {
-    transform: scale(1.2); 
-    
+    transform: scale(1.2);
+
 }
 
 
@@ -369,60 +369,70 @@ header .logo {
     width: 100%;
     background: #fff;
 }
-span{
+
+span {
     width: 50px;
     height: 50px;
-    
+
 }
 
-h4{
+h4 {
     top: 52%;
-   color: #F27405;
+    color: #F27405;
 }
-.espaco{
+
+.espaco {
     height: 125px;
     background-color: #1b1b1b;
 
 
 }
-.sobre{
-  
+
+.sobre {
+
     background-color: #1b1b1b;
     width: 100%;
 }
-.sobre .site{
+
+.sobre .site {
     display: -webkit-flex;
     justify-content: space-between;
     width: 100%;
 }
-.sobre .site div h2{
+
+.sobre .site div h2 {
     margin: 0 0 14px;
     font-weight: 800;
     color: var(--titulos-color);
     text-transform: uppercase;
     font-family: var(--titulos);
 }
-.sobre .site div p{
+
+.sobre .site div p {
     color: var(--titulos-color);
     font-size: 13pt;
 }
-.espacomin{
+
+.espacomin {
     height: 64px;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     gap: 34px;
     text-transform: uppercase;
-   
+
 }
-.text h3{
+
+.text h3 {
     -webkit-text-stroke: 1px var(--titulos-color);
     font-size: 35px;
 
-    
+
 }
-a button{
+
+a button {
     padding: 15px 53px;
     background-color: #F27405;
     color: var(--white-color);
@@ -430,14 +440,15 @@ a button{
     font-weight: 200;
 }
 
- .img_circle{
+.img_circle {
     position: relative;
     left: -12%;
     z-index: 10;
     top: 75%;
-    
+
 }
-.text_fundo{
+
+.text_fundo {
     z-index: 9;
     opacity: 0.3;
     position: relative;
@@ -448,61 +459,72 @@ a button{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
-   
+
 }
-.service{
-  
+
+.service {
+
     background-color: #1b1b1b;
     width: 100%;
 }
-.service .site{
+
+.service .site {
     display: -webkit-flex;
     justify-content: space-between;
     width: 100%;
 }
-.service .site>div{
+
+.service .site>div {
     width: 72%;
 
 }
-.service .site div h2{
+
+.service .site div h2 {
     margin: 0 0 14px;
     font-weight: 800;
     color: var(--titulos-color);
     text-transform: uppercase;
     font-family: var(--titulos);
 }
-.service .site div p{
+
+.service .site div p {
     margin-bottom: 35px;
     font-size: 16px;
     color: var(--white-color);
 }
 
-.service .site .espacomin{
+.service .site .espacomin {
     height: 40px;
 }
 
-.card{
+.card {
     justify-content: space-between;
     gap: 26px;
     display: flex;
 }
-.card a{
+
+.card a {
     text-decoration: none;
-    
+
 }
-.service .site a{
+
+.service .site a {
     text-decoration: none;
     color: var(--white-color);
 }
 
-.service .site div hr{
+.service .site div hr {
     width: 102px;
+    height: 1px;
     position: absolute;
+    background: red;
+    border: 0;
+
 }
 
 
 
-.card a h3{
+.card a h3 {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -512,10 +534,126 @@ a button{
     font-size: 23px;
 
 }
-.card a img{
+
+.card a img {
     max-height: 290px;
     height: 99%;
 }
+
+.video {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: auto;
+
+    video {
+        width: 100%;
+
+    }
+
+}
+
+.numeros {
+
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+.numeros .site {
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.numeros .site>div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-transform: uppercase;
+
+    h4 {
+        -webkit-text-stroke: 1px var(--primary-color);
+        border: 0;
+        font-size: 48px;
+
+        text-transform: uppercase;
+    }
+
+    p {
+        color: var(--white-color);
+        font-size: 20px;
+    }
+}
+
+.logo_client{
+    background-color: #1b1b1b;
+    width: 100%;
+}
+.logo_client .site { 
+    width: 100%;
+}
+
+.logo_client  h4 {
+    text-align: center;
+    padding: 0 0 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22pt;
+}
+
+
+
+.logo_client .clientes .slick-slide {
+    margin: 0 20px;
+    display: flex; 
+    justify-content: center; 
+}
+
+
+.logo_client .clientes .slick-slide img {
+    width: auto;           
+    height: auto;          
+    max-width: 100%;       
+    max-height: 150px;    
+    object-fit: contain;   /* imagem não fica esticada */
+}
+
+
+.logo_client .clientes .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo_client .clientes .slick-list:focus {
+    outline: none;
+}
+
+
+.logo_client .clientes .slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: block !important; 
+}
+
+
+.logo_client .clientes .slick-slide img {
+    display: block;
+    max-height: 100px; 
+}
+
+
+.logo_client .clientes .slick-initialized .slick-slide {
+    display: block !important;
+}
+.logo_client .clientes .slick-loading .slick-slide{
+    visibility: hidden;
+}
+
+
 
 
 
@@ -549,5 +687,3 @@ img {
     max-width: 100%;
     height: auto;
 } */
-
-
