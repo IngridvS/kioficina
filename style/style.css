@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'PACE Italic';
     src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
@@ -108,7 +109,8 @@ hr {
     font-size: 20px;
     color: #fff;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -229,9 +231,10 @@ header .logo {
         opacity: 0;
     }
 }
-.banner{
+
+.banner {
     position: relative;
-   
+
 }
 
 .banner .slide {
@@ -329,7 +332,7 @@ header .logo {
 
 .slick-next {
     top: 86%;
-    
+
 
 }
 
@@ -339,7 +342,7 @@ header .logo {
 
 .slick-next:before {
     content: ">";
-   
+
 }
 
 
@@ -351,20 +354,20 @@ header .logo {
     opacity: .50;
     backdrop-filter: blur(8px);
     margin-right: 8px;
-   
+
 }
 
 .slick-dots li {
     margin: 0 0 30px;
-  
-    gap: 50px; 
+
+    gap: 50px;
     font-family: 'PACE Italic';
 }
 
 
 .slick-dots li.slick-active button {
     transform: scale(1.2);
-    
+
 
 }
 
@@ -390,7 +393,7 @@ header .logo {
     justify-content: center;
     width: 8%;
     position: absolute;
-   margin-left: 92px;
+    margin-left: 92px;
     z-index: 20;
     top: 470px;
 }
@@ -399,7 +402,7 @@ header .logo {
     font-size: 2em;
     color: var(--white-color);
     font-family: 'PACE Italic';
-    margin-bottom:10px ;
+    margin-bottom: 10px;
 }
 
 .texto_banner p {
@@ -429,6 +432,7 @@ header .logo {
     color: var(--primary-color);
     transform: translate3d(0px, -7px, 0.01px);
 }
+
 .banner {
     .banner-contato {
         position: absolute;
@@ -462,13 +466,14 @@ header .logo {
             0 0 0 10px rgba(212, 130, 1, 0.1);
     }
 
-    .banner-contato h6{
-      font-size: 9pt;
+    .banner-contato h6 {
+        font-size: 9pt;
         text-decoration: none;
         color: var(--white-color);
         font-family: 'PACE Italic';
     }
 }
+
 .banner-rede-social {
     position: absolute;
     z-index: 11;
@@ -569,6 +574,7 @@ header .logo {
     margin-bottom: 10px;
 
 }
+
 .caixa div p {
     color: var(--titulos-color);
     font-size: 10pt;
@@ -710,7 +716,7 @@ a button {
     color: #D48201;
     font-size: 24px;
     font-weight: 200;
-    
+
 }
 
 .escolha .site a button:hover {
@@ -718,7 +724,7 @@ a button {
     background-color: #D48201;
     color: var(--white-color);
     transform: translate3d(0px, -7px, 0.01px);
-    
+
 }
 
 
@@ -789,33 +795,27 @@ a button {
     text-transform: uppercase;
     font-family: var(--titulos);
 }
-
 .service .site div p {
     margin-bottom: 35px;
     font-size: 16px;
     color: var(--white-color);
 }
-
 .service .site .espacomin {
     height: 40px;
 }
-
 .card {
     justify-content: space-between;
     gap: 26px;
     display: flex;
 }
-
 .card a {
     text-decoration: none;
 
 }
-
 .service .site a {
     text-decoration: none;
     color: var(--white-color);
 }
-
 .service .site div hr {
     width: 102px;
     height: 1px;
@@ -824,9 +824,6 @@ a button {
     border: 0;
 
 }
-
-
-
 .card a h3 {
     text-decoration: none;
     font-weight: 700;
@@ -835,14 +832,11 @@ a button {
     font-family: var(--fontNoCorpo);
     color: var(--titulos-color);
     font-size: 23px;
-
 }
-
 .card a img {
     max-height: 290px;
     height: 99%;
 }
-
 .video {
     background-color: #1b1b1b;
     width: 100%;
@@ -854,19 +848,16 @@ a button {
     }
 
 }
-
 .numeros {
 
     background-color: #1b1b1b;
     width: 100%;
 }
-
 .numeros .site {
     display: -webkit-flex;
     justify-content: space-between;
     width: 100%;
 }
-
 .numeros .site>div {
     display: flex;
     justify-content: space-evenly;
@@ -886,16 +877,13 @@ a button {
         font-size: 20px;
     }
 }
-
 .logo_client {
     background-color: #1b1b1b;
     width: 100%;
 }
-
 .logo_client .site {
     width: 100%;
 }
-
 .logo_client h4 {
     text-align: center;
     padding: 0 0 70px;
@@ -903,16 +891,11 @@ a button {
     text-transform: uppercase;
     font-size: 22pt;
 }
-
-
-
 .logo_client .clientes .slick-slide {
     margin: 0 20px;
     display: flex;
     justify-content: center;
 }
-
-
 .logo_client .clientes .slick-slide img {
     width: auto;
     height: auto;
@@ -922,7 +905,6 @@ a button {
     /* imagem não fica esticada */
 }
 
-
 .logo_client .clientes .slick-list {
     position: relative;
     display: block;
@@ -931,11 +913,9 @@ a button {
     padding: 0;
 }
 
-
 .logo_client .clientes .slick-list:focus {
     outline: none;
 }
-
 
 .logo_client .clientes .slick-slide {
     float: left;
@@ -943,13 +923,10 @@ a button {
     min-height: 1px;
     display: block !important;
 }
-
-
 .logo_client .clientes .slick-slide img {
     display: block;
     max-height: 100px;
 }
-
 
 .logo_client .clientes .slick-initialized .slick-slide {
     display: block !important;
@@ -958,7 +935,6 @@ a button {
 .logo_client .clientes .slick-loading .slick-slide {
     visibility: hidden;
 }
-
 
 .ceo {
     background-color: #1b1b1b;
@@ -969,41 +945,68 @@ a button {
     width: 100%;
 }
 
-.fts_ceo>div {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-}
-
-
-
-.dados {
+.ceo .site .item_titulo {
     display: flex;
     justify-content: space-around;
-    color: #fff;
-    width: 100%;
-    
+    align-items: center;
+    flex-wrap: wrap;
 }
-.dados .inf{
+.ceo .site .item_membs{
+   background: rgba(255, 0, 0, 0.658);
+}
+.texto_ceo{
     display: flex;
-    justify-content: space-between;
-    background: #000000;
-    height: 90%;
-    width: 100%;
-    position: relative;
 }
-.dados .primeira{
+.texto_ceo >div{
+    width: 50%;
+}
+.primeira{
     position: absolute;
-
-    
+    margin-top: 35px;
+    right: 221px;
+    height: 56%
 }
-.dados .imgs{
-    position: absolute;
-}
-.dados .segunda{
+.segunda{
     position: relative;
     z-index: 10;
+    right: 34px;
 }
+
+/* precisa ser terminado ainda */
+
+.time_oficina{
+    background-color: #1b1b1b;
+    width: 100%;
+}
+.time_oficina .site >div{
+   display: flex;
+   justify-content: space-between;
+}
+.sessao_team{
+    width: 31%;
+    
+}
+.time{
+    display: flex;
+    gap: 22px;
+    width: 64%;
+}
+.team div img{
+    width: 99%;
+    
+}
+div.time .team .inf{
+    position: absolute;
+    background: red;
+    top: 18%;
+}
+
+
+
+
+
+
+
 
 
 

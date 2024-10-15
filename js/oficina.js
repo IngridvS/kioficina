@@ -67,7 +67,14 @@ $(document).ready(function () {
     ]
 
   })
-  
+
+  // $('.ceo .membs').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   autoplaySpeed: 2000,
+  //   dots: false,
+  // });
 });
 
 
