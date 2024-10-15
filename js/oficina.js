@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.banner div').slick({
+  $('.banner .slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   $('.logo_client .clientes').slick({
     slidesToScroll: 1,
-    slidesToShow: 6,
+    slidesToShow: 7,
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
@@ -67,6 +67,7 @@ $(document).ready(function () {
     ]
 
   })
+  
 });
 
 

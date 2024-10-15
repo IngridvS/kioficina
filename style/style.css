@@ -7,6 +7,15 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PACE Italic';
+    src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE-Italic.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
 
 @font-face {
     font-family: 'Sofast';
@@ -24,6 +33,7 @@ html {
     padding: 0;
     overflow-x: hidden;
     /* Impede a rolagem lateral */
+    font-family: var(--fontNoCorpo);
 }
 
 :root {
@@ -97,6 +107,9 @@ p {
 hr {
     font-size: 20px;
     color: #fff;
+}
+a{
+    text-decoration: none;
 }
 
 header {
@@ -216,8 +229,12 @@ header .logo {
         opacity: 0;
     }
 }
+.banner{
+    position: relative;
+   
+}
 
-.banner {
+.banner .slide {
     position: relative;
     width: 100%;
     left: 0;
@@ -226,11 +243,50 @@ header .logo {
 
 }
 
-.banner img {
+
+
+.banner .slide .slick-slide img {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    margin: 0;
+
+
+
+    /* imagem não fica esticada */
 }
+
+
+.banner .slide .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner .slide .slick-list:focus {
+    outline: none;
+}
+
+
+.banner .slide .slick-slide {
+    float: left;
+    height: 100%;
+    display: block !important;
+}
+
+
+
+
+
+.banner .slide .slick-initialized .slick-slide {
+    display: block !important;
+}
+
+.banner .slide .slick-loading .slick-slide {
+    visibility: hidden;
+}
+
 
 .slick-prev,
 .slick-next {
@@ -257,8 +313,8 @@ header .logo {
 
 }
 
-.banner .slick-prev::before,
-.banner .slick-next::before {
+.banner div .slick-prev::before,
+.banner div .slick-next::before {
     position: absolute;
     font-size: 53px;
 
@@ -273,6 +329,7 @@ header .logo {
 
 .slick-next {
     top: 86%;
+    
 
 }
 
@@ -282,6 +339,7 @@ header .logo {
 
 .slick-next:before {
     content: ">";
+   
 }
 
 
@@ -289,19 +347,24 @@ header .logo {
     position: absolute;
     right: 5px;
     z-index: 100;
-    top: 47%;
+    top: 38%;
     opacity: .50;
     backdrop-filter: blur(8px);
+    margin-right: 8px;
+   
 }
 
 .slick-dots li {
-    margin: 0 0 20px;
-    gap: 50px;
+    margin: 0 0 30px;
+  
+    gap: 50px; 
+    font-family: 'PACE Italic';
 }
 
 
 .slick-dots li.slick-active button {
     transform: scale(1.2);
+    
 
 }
 
@@ -311,13 +374,137 @@ header .logo {
     background: rgba(0, 0, 0, 0.1);
     width: 30px;
     height: 30px;
-    color: #fff;
-    font-size: 20pt;
+    font-size: 30px;
+    opacity: 1;
+    color: #FFFF00;
+    font-family: 'PACE Italic';
 }
 
 
 .slick-dots li button:before {
     font-size: 28pt;
+}
+
+.texto_banner {
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    position: absolute;
+   margin-left: 92px;
+    z-index: 20;
+    top: 470px;
+}
+
+.texto_banner h2 {
+    font-size: 2em;
+    color: var(--white-color);
+    font-family: 'PACE Italic';
+    margin-bottom:10px ;
+}
+
+.texto_banner p {
+    font-size: 21px;
+    color: var(--white-color);
+    font-family: var(--fontNoCorpo);
+}
+
+.texto_banner a button {
+    margin-top: 45px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--corDoTexto);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--fontNoCorpo);
+    border: none;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    transform: translate3d(0, 0px, 0px);
+}
+
+.texto_banner a button:hover {
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    background-color: var(--corDoTexto);
+    color: var(--primary-color);
+    transform: translate3d(0px, -7px, 0.01px);
+}
+.banner {
+    .banner-contato {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 160px;
+        color: var(--titulos-color);
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-contato div {
+        margin: 0 2%;
+    }
+
+    .banner-contato div a {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-contato span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 55%;
+        background-color: rgb(212, 130, 1);
+        margin-right: 10px;
+        cursor: pointer;
+        z-index: 9;
+        box-shadow: 0 0 0 5px rgba(212, 130, 1, 0.3),
+            0 0 0 10px rgba(212, 130, 1, 0.1);
+    }
+
+    .banner-contato h6{
+      font-size: 9pt;
+        text-decoration: none;
+        color: var(--white-color);
+        font-family: 'PACE Italic';
+    }
+}
+.banner-rede-social {
+    position: absolute;
+    z-index: 11;
+    width: 100px;
+    color: var(--titulos-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    top: 30%;
+
+    .linha-horizontal {
+        width: 1px;
+        height: 85px;
+        background: rgb(212, 130, 1);
+    }
+
+    .social-text {
+        transform: rotate(-90deg);
+        color: #fff;
+        font-family: Oxanium;
+        font-size: .8em;
+        font-weight: 400;
+        margin-top: 40px;
+        font-family: 'PACE Italic';
+    }
+
+    a svg path {
+        fill: white;
+        transition: fill 0.3s ease;
+    }
+
+    a:hover svg path {
+        fill: #FFFF00;
+    }
+
 }
 
 
@@ -349,7 +536,7 @@ header .logo {
 
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 25px;
     align-items: center;
     margin-bottom: 25px;
 }
@@ -364,13 +551,13 @@ header .logo {
     padding: 42px 24px;
     text-align: center;
     font-size: 16px;
-    height: 202px;
+    height: 234px;
     color: #fff;
 
 }
 
 .caixa .numero_item h4 {
-    font-size: 35px;
+    font-size: 30px;
     padding-right: 15px;
     color: transparent;
     -webkit-text-stroke: 1px #FFFF00;
@@ -378,7 +565,13 @@ header .logo {
 
 .caixa div h4 {
     color: var(--titulos-color);
-    font-size: 1em;
+    font-size: 13pt;
+    margin-bottom: 10px;
+
+}
+.caixa div p {
+    color: var(--titulos-color);
+    font-size: 10pt;
     margin-bottom: 10px;
 
 }
@@ -476,6 +669,7 @@ h4 {
     text-transform: uppercase;
     font-family: var(--titulos);
 }
+
 .escolha .site div p {
     font-family: var(--titulos-color);
     font-size: 20px;
@@ -486,8 +680,10 @@ h4 {
     z-index: 10;
     color: var(--white-color);
 }
+
 .escolha .site div .text {
     gap: 34px;
+
     h3 {
         font-size: 25px;
         font-family: var(--fontNoCorpo);
@@ -514,12 +710,15 @@ a button {
     color: #D48201;
     font-size: 24px;
     font-weight: 200;
+    
 }
-.escolha .site  a button{
+
+.escolha .site a button:hover {
     transition: background-color 0.4s, transform 0.3s, color 0.3s;
     background-color: #D48201;
     color: var(--white-color);
     transform: translate3d(0px, -7px, 0.01px);
+    
 }
 
 
@@ -767,8 +966,6 @@ a button {
 }
 
 .ceo .site {
-
-
     width: 100%;
 }
 
@@ -778,26 +975,37 @@ a button {
     max-width: 1200px;
 }
 
-.fts_ceo .caixa2 .primeira {
-    position: absolute;
-    position: relative;
-    left: 42%;
-}
-
-.fts_ceo .caixa2 .segunda {
-    z-index: 10;
-    top: -62px;
-    position: relative;
-}
-
 
 
 .dados {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #fff;
     width: 100%;
+    
 }
+.dados .inf{
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.dados .primeira{
+    position: absolute;
+
+    
+}
+.dados .imgs{
+    position: absolute;
+}
+.dados .segunda{
+    position: relative;
+    z-index: 10;
+}
+
+
 
 
 
