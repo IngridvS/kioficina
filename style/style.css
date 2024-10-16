@@ -900,18 +900,47 @@ a button {
 
 }
 
-
-.video {
-    background-color: #1b1b1b;
+.video{
+    height: 700px;
     width: 100%;
-    height: auto;
 
-    video {
+    a{
+        background-image: url(../img/car_video_bg.jpg);
+        display: block;
+        height: 100%;
         width: 100%;
-
+        background-size: cover;
+        
+        
+    }
+    .butto {
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+        top: 40%;
+        left: 46%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background-color: var(--primary-color);
+        justify-content: center;
     }
 
+    .butto span {
+        display: block;
+        position: relative;
+        z-index: 9;
+        width: 0;
+        height: 0;
+        border-left: 26px solid currentColor;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        color: var(--white-color);
+    }
 }
+
 
 .numeros {
 
