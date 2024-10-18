@@ -19,7 +19,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false  
+          arrows: false
         }
       },
       {
@@ -27,8 +27,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,    
-          dots: false       
+          arrows: false,
+          dots: false
         }
       }
     ]
@@ -68,16 +68,22 @@ $(document).ready(function () {
 
   })
 
-   $('.depoimento .depos_cliente').slick({
+  $('.depoimento .depos_cliente').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'), /*chame do html para o js*/
     dots: false,
+    fade: true, /*ele faz com que a apresentação seja suave*/
     pauseOnHover: false,
-   });
+  });
+
+
 });
+
+
 
 
 

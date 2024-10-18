@@ -344,27 +344,29 @@ header .logo {
         font-size: 53px;
 
     }
+
     .slick-prev {
         top: 86%;
         right: 120px;
-    
+
     }
+
     .slick-next {
         top: 86%;
-    
-    
+
+
     }
-    
+
     .slick-prev:before {
         content: "<";
     }
-    
+
     .slick-next:before {
         content: ">";
-    
+
     }
-    
-    
+
+
     .slick-dots {
         position: absolute;
         right: 5px;
@@ -373,20 +375,20 @@ header .logo {
         opacity: .50;
         backdrop-filter: blur(8px);
         margin-right: 8px;
-    
+
     }
-    
+
     .slick-dots li {
         margin: 0 0 30px;
         gap: 50px;
         font-family: 'PACE Italic';
     }
-    
+
     .slick-dots li.slick-active button {
         transform: scale(1.2);
-    
+
     }
-    
+
     .slick-dots li button {
         border: none;
         background: rgba(0, 0, 0, 0.1);
@@ -397,8 +399,8 @@ header .logo {
         color: #FFFF00;
         font-family: 'PACE Italic';
     }
-    
-    
+
+
     .slick-dots li button:before {
         font-size: 28pt;
     }
@@ -419,11 +421,13 @@ header .logo {
         font-family: 'PACE Italic';
         margin-bottom: 10px;
     }
+
     p {
         font-size: 21px;
         color: var(--white-color);
         font-family: var(--fontNoCorpo);
     }
+
     a button {
         margin-top: 45px;
         display: inline-block;
@@ -440,13 +444,14 @@ header .logo {
         transition: background-color 0.4s, transform 0.3s, color 0.3s;
         transform: translate3d(0, 0px, 0px);
     }
+
     a button:hover {
         transition: background-color 0.4s, transform 0.3s, color 0.3s;
         background-color: var(--corDoTexto);
         color: var(--primary-color);
         transform: translate3d(0px, -7px, 0.01px);
     }
-    
+
 }
 
 .banner-contato {
@@ -461,10 +466,12 @@ header .logo {
     div {
         margin: 0 2%;
     }
+
     div a {
         display: flex;
         align-items: center;
     }
+
     span {
         display: flex;
         align-items: center;
@@ -478,6 +485,7 @@ header .logo {
         box-shadow: 0 0 0 5px rgba(212, 130, 1, 0.3),
             0 0 0 10px rgba(212, 130, 1, 0.1);
     }
+
     h6 {
         font-size: 9pt;
         text-decoration: none;
@@ -994,19 +1002,31 @@ header .logo {
 
         .item_titulo {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            position: relative;
+
+            h2 {
+                font-size: 32pt;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--primary-color);
+                z-index: 10;
+                font-family: var(--titulos);
+            }
+
         }
+
+
+
     }
 
     .depos {
         position: relative;
         justify-content: space-between;
         display: flex;
-        background: red;
-        z-index: 1;
-        /* Garante que o conteúdo esteja na frente */
+        z-index: 10;
 
     }
 
@@ -1024,9 +1044,6 @@ header .logo {
         padding: 0;
     }
 
-    .depos_cliente .slick-list:focus {
-        outline: none;
-    }
 
     .depos_cliente .slick-slide {
         float: left;
@@ -1034,17 +1051,7 @@ header .logo {
         min-height: 1px;
     }
 
-    .depos_cliente .slick-slide img {
-        display: block;
-    }
 
-    .depos_cliente .slick-initialized .slick-slide {
-        display: block !important;
-    }
-
-    .depos_cliente .slick-loading .slick-slide {
-        visibility: hidden;
-    }
 
     .fundo-img {
         position: absolute;
@@ -1062,8 +1069,52 @@ header .logo {
         right: 2%;
     }
 
+    .depos_t {
+        h5 {
+            color: var(--white-color);
+        }
+
+        p {
+            color: var(--white-color);
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .depor-p {
+
+        h4 {
+            font-family: var(--fontNoCorpo);
+            font-size: 20px;
+            color: var(--white-color);
+            line-height: 35px;
+        }
+
+    }
+
+    .slick-arrows {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slick-prev,
+    .slick-next {
+        background-color: var(--primary-color);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+
 
 }
+
 
 .sessao_team {
     width: 53%;
@@ -1116,37 +1167,151 @@ header .logo {
 
 }
 
-
-.planos {
-    background-image: url(../img/pricing_bg.png);
+.blog {
+    background-color: #1b1b1b;
     width: 100%;
 
-    .site .espacoP {
-        height: 125px;
-        width: 100%; 
-    }
-    .text_fundo {
-        justify-content: center;
-        width: 76%
+
+    .site {
+        width: 100%;
+
+        .text_fundo {
+            font-size: 80px;
+        }
+
+
+        div {
+            h4 {
+                color: var(--white-color);
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 28pt;
+                font-family: var(--titulos);
+                text-transform: uppercase;
+                z-index: 10;
+                font-weight: 700;
+                position: relative;
+
+            }
+
+            p {
+                color: var(--white-color);
+                text-align: center;
+                width: 50%;
+                font-family: var(--fontNoCorpo);
+                font-weight: 200;
+                z-index: 10;
+                position: relative;
+
+            }
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            width: 100%;
+
+        }
+
+        .blog_imgs {
+            display: block;
+            justify-content: space-between;
+            margin: 10px;
+
+            a {
+                text-decoration: none;
+                color: var(--white-color);
+
+
+            }
+
+            a:hover {
+                letter-spacing: 2px;
+                color: var(--primary-color);
+            }
+
+            hr {
+                width: 102px;
+                height: 1px;
+                position: absolute;
+                background-color: var(--primary-color);
+                border: 0;
+            }
+
+            div {
+                margin-top: 20px;
+
+                data {
+                    color: var(--white-color);
+                    font-size: 13pt;
+                    font-weight: 100;
+                    font-family: var(--fontNoCorpo);
+                }
+
+                h6 {
+                    font-size: 14pt;
+                    font-weight: 200;
+                    color: var(--white-color);
+                    margin-top: 10px;
+                    font-family: var(--fontNoCorpo);
+                    margin-bottom: 19px;
+                }
+
+
+            }
+        }
     }
 
-    .precos {
-        display: flex;
-        justify-content: space-around;
-        gap: 40px;
+}
+
+footer {
+    background: #000000;
+    
+
+    >div {
+        max-width: 1200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .espaco{
+            background: #000;
+            height: 80px;
+        }
+        hr {
+            background-color: var(--primary-color);
+            height: 1px;
+            border: 0;
+        }
+        a svg{
+            width: 12%;
+            margin-bottom: 30px;
+        }
+        .inf_footer{
+            display: flex;
+            justify-content: space-between;
+        }
+        p{
+            color: #fff;
+            width: 40%;
+            
+        }
+        .telefone{
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .menu{
+            
+            ul li{
+               display: block;
+            }
+        }
     }
 
-    .card_preco {
-        gap: 50px;
-        padding: 81px 72px;
-        min-width: 255px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        opacity: 1;
-        background: rgba(255, 0, 0, 0);
-        backdrop-filter: blur(100px);
-    }
+
+
+
+
 }
