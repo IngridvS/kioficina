@@ -30,7 +30,7 @@
 
 body,
 html {
-   
+
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -976,7 +976,7 @@ header .logo {
         display: block !important;
     }
 
-   
+
 }
 
 
@@ -1060,16 +1060,16 @@ header .logo {
         display: flex;
         justify-content: space-between;
         width: 86%;
-       
+
 
         h5 {
             color: var(--white-color);
             font-family: var(--titulos);
-           
+
         }
 
         p {
-           
+
             color: var(--white-color);
             margin-bottom: 10px;
         }
@@ -1078,8 +1078,8 @@ header .logo {
 
     .depor-p {
 
-        h4 { 
-             margin-top: 20px;
+        h4 {
+            margin-top: 20px;
             font-family: var(--fontNoCorpo);
             font-size: 20px;
             color: var(--white-color);
@@ -1116,23 +1116,51 @@ header .logo {
     width: 53%;
     position: relative;
     z-index: 10;
-    
-    
 
-    h4{
-        color: var(--white-color);
+
+
+    h2 {
+        color: var(--primary-color);
+        font-size: 21pt;
+        text-transform: uppercase;
+        font-family: var(--titulos);
+        font-weight: 500;
+        position: relative;
+        z-index: 10;
     }
-    p{
+
+    p {
         color: var(--white-color);
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 24px;
+        position: relative;
+        z-index: 10;
     }
-    hr{
+
+    hr {
         width: 102px;
         height: 1px;
         position: absolute;
         background-color: var(--primary-color);
         border: 0
+    }
+    div{
+        top: 20px;
+        position: relative;
+    }
+    a{
+        text-decoration: none;
+        color: var(--white-color);
+        font-family: var(--fontNoCorpo);
 
     }
+    a:nth-last-child(2):hover {
+        color: var(--primary-color);
+        letter-spacing: 2px;
+
+    }
+
 }
 
 .time_oficina {
@@ -1143,47 +1171,175 @@ header .logo {
         display: flex;
         justify-content: space-between;
     }
-    .text_fundo{
+
+    .text_fundo {
         font-size: 60pt;
     }
 
+
+
     .team-container {
         display: flex;
-        gap: 11px;
+        gap: 0px;
         margin: 40px 0;
-        padding: 0 50px;
+
+
+
+        .team {
+
+            .team-member {
+                position: relative;
+                width: 280px;
+                height: 300px;
+                max-width: 100%;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                margin: 0 10px;
+
+
+            }
+
+            .team-member-inf {
+                position: absolute;
+                background: #000;
+                bottom: -40px;
+                padding: 23px 0px;
+                width: 76%;
+                height: 100px;
+                margin: 0 12%;
+                overflow: hidden;
+                transition: all 0.5s ease-in-out;
+                border-bottom: 1px solid #FFFF00;
+                text-align: center;
+
+
+                .equipes {
+                    a {
+                        cursor: pointer;
+                        font-size: 20px;
+                        color: var(--primary-color);
+                        font-weight: 700;
+                        font-family: var(--heading-font-family);
+                    }
+
+                    p {
+                        top: 65px;
+                        opacity: 1;
+                        position: absolute;
+                        color: #fff;
+                        right: 0;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                }
+
+                .equipe_info-social {
+                    opacity: 0;
+                    position: absolute;
+                    top: 25px;
+                    left: 0;
+                    transition: all 0.5s ease-in-out;
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+
+
+                    a {
+                        width: 30px;
+                        height: 26px;
+                        cursor: pointer;
+                        border: 1px solid #fff;
+                        padding: 2px 4px;
+                        display: inline-block;
+                    }
+
+                    a:hover {
+                        cursor: pointer;
+                        border: 1px solid #FFFF00;
+                        background-color: #D48201;
+                    }
+
+
+                }
+            }
+
+            
+            :hover .team-member-inf p {
+                animation: entrarDeslizeDireita 0.5s forwards;
+            }
+
+            :hover .equipe_info-social {
+                opacity: 1;
+                animation: entrarDeslizeEsquerda 0.5s forwards;
+            }
+
+      
+            :not(:hover) .team-member-inf p {
+                animation: slideInLeft 0.5s forwards;
+            }
+
+            :not(:hover) .equipe_info-social {
+                animation: slideOutLeft 0.5s forwards;
+            }
+
+
+        }
     }
 
-    .team-member {
 
-        padding: 11px;
-        text-align: center;
-
-        div {
-            background-color: #000;
-            height: 125px;
+    @keyframes entrarDeslizeDireita {
+        0% {
+            transform: translateX(0);
         }
 
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
 
-        img {
-            width: 104%;
-            border-radius: 10px;
+    /* Keyframes para animar as redes sociais vindo da esquerda */
+    @keyframes entrarDeslizeEsquerda {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
         }
 
-        h3 {
-            margin-top: 15px;
-            font-size: 1.5rem;
-            color: #fff;
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Keyframes para animar as redes sociais vindo da esquerda */
+    @keyframes slideInLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
         }
 
-        p {
-            margin-top: 5px;
-            font-size: 1rem;
-            color: #999;
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Keyframes para as redes sociais saírem para a esquerda */
+    @keyframes slideOutLeft {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(-100%);
+            opacity: 0;
         }
     }
 
 }
+
 
 .blog {
     background-color: #1b1b1b;
@@ -1200,7 +1356,7 @@ header .logo {
 
         div {
             h4 {
-                color: var(--white-color);
+                color: var(--primary-color);
                 text-align: center;
                 margin-bottom: 10px;
                 font-size: 28pt;
@@ -1215,11 +1371,13 @@ header .logo {
             p {
                 color: var(--white-color);
                 text-align: center;
-                width: 50%;
+                max-width: 600px;
+                margin: 0 auto;
                 font-family: var(--fontNoCorpo);
                 font-weight: 200;
                 z-index: 10;
                 position: relative;
+                justify-content: center;
 
             }
         }
@@ -1361,6 +1519,47 @@ footer {
             }
         }
 
+        .footer-contato {
+            left: 0;
+            top: 160px;
+            color: var(--titulos-color);
+
+
+            div {
+                margin: 10px;
+            }
+
+            div a {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 55%;
+                background-color: rgb(212, 130, 1);
+                margin-right: 10px;
+                padding: 11px;
+                cursor: pointer;
+                z-index: 9;
+                box-shadow: 0 0 0 5px rgba(212, 130, 1, 0.3),
+                    0 0 0 10px rgba(212, 130, 1, 0.1);
+            }
+
+            h6 {
+                top: 10px;
+                font-size: 9pt;
+                text-decoration: none;
+                color: var(--white-color);
+                font-family: 'PACE Italic';
+                display: ruby-text;
+            }
+
+
+        }
 
     }
 }
