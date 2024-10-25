@@ -1,0 +1,14 @@
+
+# mecanismo de rescrita do apache 
+RewriteEngine On
+
+# Define o caminho base para todas as regras 
+
+RewriteBase /
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+# se um não existir e nem o o d = diretorio  
+RewriteCond %{REQUEST_FILENAME} !-d
+# ele defini as regras 
+RewriteRule ^(.*)$ index.php [QSA,L]
