@@ -3,12 +3,11 @@
 RewriteEngine On
 
 # Define o caminho base para todas as regras 
-
-RewriteBase /
-
+RewriteBase /kioficina/public/
 
 RewriteCond %{REQUEST_FILENAME} !-f
-# se um não existir e nem o o d = diretorio  
+# verificação de condições 
 RewriteCond %{REQUEST_FILENAME} !-d
 # ele defini as regras 
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+# ^(.*)$:É uma expressao regular que captura qualquer coisa após o dominio 

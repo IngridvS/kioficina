@@ -14,14 +14,17 @@ class Core{
         if(isset($_GET['url'])){
              // isset no PHP é usada para verificar se uma variável foi definida e se seu valor não é null. Ela retorna true se a variável existir e tiver algum valor (diferente de null), e false caso contrário. Essa função é muito útil para verificar a existência de variáveis antes de usá-las e evitar erros
             $url .= $_GET['url'];
-            // var_dump($url);
-
+            
         }
+        // var_dump($url);
+
+
         // definindo um array para armazenar um parametro da URL 
         $parametro = array();
+       
         
-        // verifica se url não está vazia "!" e não é apenas uma /
-          // se ela não for vazia preciso saber oq tem dentro dela
+        //  verifica se url não está vazia "!" e não é apenas uma /
+        //   // se ela não for vazia preciso saber oq tem dentro dela
         if(!empty($url) && $url != '/'){
 
             // empty verifica variável se está vazio
@@ -30,6 +33,7 @@ class Core{
             //controller/ação/parametro = id
 
             $url = explode('/', $url);
+            // var_dump($url);
 
             // explode no php quero separação toda vez que encontra uma /
 
@@ -49,8 +53,12 @@ class Core{
             // ucfirst - coloca a primeia letra em maiúscula 
             // concatenar  'Controller' ao nome para seguir o padrão 
             $controladorAtual = ucfirst($url[0]) . 'Controller';
+            // controladorAtual : ServicosController 
+
+            //var_dump($controladorAtual);
 
             array_shift($url);
+            //var_dump($url);
             // especialidade[0]
             // nomeservico = [1]
 
@@ -58,8 +66,12 @@ class Core{
 
             if(isset($url[0]) && !empty($url[0])){
                 $acaoAtual = $url[0];
+                // especialidade
+                //var_dump("Nome da ação atual ".$acaoAtual);
+                array_shift($url);
             }else{
                 $acaoAtual = 'index';
+                //var_dump($acaoAtual);
 
             }
 
@@ -74,20 +86,22 @@ class Core{
         }else{
             $controladorAtual = 'HomeController';
             $acaoAtual = 'index';
+            var_dump('Controlador Atual: ' . $controladorAtual);
+            var_dump('Ação atual: ' . $acaoAtual);
         }
 
-        // verifica se o arquivo do controller existe e se o metodo existe  na class 
-        if(!file_exists('../app/controllers/' . $controladorAtual .'.php') || !method_exists($controladorAtual, $acaoAtual)){
+        // // verifica se o arquivo do controller existe e se o metodo existe  na class 
+        // if(!file_exists('../app/controllers/' . $controladorAtual .'.php') || !method_exists($controladorAtual, $acaoAtual)){
 
-            // Se não exist defina o controller com o error 404
-            $controladorAtual = 'ErroController';
-            $acaoAtual = 'index';
-        }
-        // instacia  do controller atual 
-        $controller = new $controladorAtual();
+        //     // Se não exist defina o controller com o error 404
+        //     $controladorAtual = 'ErroController';
+        //     $acaoAtual = 'index';
+        // }
+        // // instacia  do controller atual 
+        // $controller = new $controladorAtual();
         
-        // chama uma função de retorno com um array de parâmetro 
-        call_user_func_array(array($controller, $acaoAtual), $parametro);
+        // // chama uma função de retorno com um array de parâmetro 
+        // call_user_func_array(array($controller, $acaoAtual), $parametro);
 
     }
 }
