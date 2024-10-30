@@ -64,7 +64,7 @@ class Core{
 
             // verificar se existe uma ação na url 
 
-            if(isset($url[0]) && !empty($url[0])){
+            if(isset($url[0]) && !empty ($url[0])){
                 $acaoAtual = $url[0];
                 // especialidade
                 //var_dump("Nome da ação atual ".$acaoAtual);
@@ -86,22 +86,36 @@ class Core{
         }else{
             $controladorAtual = 'HomeController';
             $acaoAtual = 'index';
-            var_dump('Controlador Atual: ' . $controladorAtual);
-            var_dump('Ação atual: ' . $acaoAtual);
+            //var_dump('Controlador Atual: ' . $controladorAtual);
+            //var_dump('Ação atual: ' . $acaoAtual);
         }
 
-        // // verifica se o arquivo do controller existe e se o metodo existe  na class 
-        // if(!file_exists('../app/controllers/' . $controladorAtual .'.php') || !method_exists($controladorAtual, $acaoAtual)){
+        //var_dump('../app/controllers/' . $controladorAtual .'.php');
 
-        //     // Se não exist defina o controller com o error 404
-        //     $controladorAtual = 'ErroController';
-        //     $acaoAtual = 'index';
-        // }
+        // // verifica se o arquivo do controller existe e se o metodo existe  na class 
+        if(!file_exists('../app/controllers/'. $controladorAtual .'.php') || !method_exists($controladorAtual,$acaoAtual)){
+
+            // Se não exist defina o controller com o error 404
+            $controladorAtual = 'ErroController';
+            $acaoAtual = 'index';
+
+            //var_dump('Controlador Atual: ' . $controladorAtual);
+            //var_dump('Ação atual: ' . $acaoAtual);
+
+        }
+      
+
+        // var_dump('Controlador Atual: ' . $controladorAtual);
+        // var_dump('Ação atual: ' . $acaoAtual);
+
+
+
         // // instacia  do controller atual 
-        // $controller = new $controladorAtual();
+        $controller = new $controladorAtual();
+        //var_dump($controller);
         
         // // chama uma função de retorno com um array de parâmetro 
-        // call_user_func_array(array($controller, $acaoAtual), $parametro);
+         call_user_func_array(array($controller, $acaoAtual), $parametro);
 
     }
 }

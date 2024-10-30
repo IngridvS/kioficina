@@ -8,5 +8,5 @@ require_once('../config/config.php');
 // núcleo da aplicação
 
 $nucleo = new Core();
-$nucleo->executar();
+$nucleo ->executar();
 
