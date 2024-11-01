@@ -36,6 +36,7 @@ html {
     overflow-x: hidden;
     /* Impede a rolagem lateral */
     font-family: var(--fontNoCorpo);
+    background-color: var(--corDeFundo);
 }
 
 :root {
@@ -49,6 +50,8 @@ html {
     --black-color: #000000;
     --primary-color: #FFFF00;
 }
+
+
 
 
 .site {

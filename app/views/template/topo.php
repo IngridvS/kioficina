@@ -6,12 +6,12 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="">SERVIÇOS</a></li>
-                    <li><a href="">ÁREA DE ATUAÇÃO</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <li><a href="<?php BASE_URL ?> home">HOME</a></li>
+                    <li><a href="<?php BASE_URL ?> sobre">SOBRE</a></li>
+                    <li><a href="<?php BASE_URL ?> servico">SERVIÇOS</a></li>
+                    <li><a href="<?php BASE_URL ?> area">ÁREA DE ATUAÇÃO</a></li>
+                    <li><a href="<?php BASE_URL ?> blog">BLOG</a></li>
+                    <li><a href="<?php BASE_URL ?> contato">CONTATO</a></li>
                 </ul>
             </nav>
 
