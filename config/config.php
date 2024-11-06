@@ -6,9 +6,10 @@ define("BASE_URL","http://localhost/kioficina/");
 
 //config do data base 
 define("DB_HOST","smpsistema.com.br");
-define("DB_NOME","");
-define("DB_USER","");
-define("DB_PASS","");
+define('PORT_EMAIL', '465');
+define('USER_EMAIL','kioficinasmpsistema.com.br');
+define('PASS_EMAIL', 'Senac@tipi02');
+
 
 // sistema de autoload das class
 spl_autoload_register(function($classe){

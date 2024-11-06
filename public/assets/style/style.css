@@ -1442,7 +1442,141 @@ header .logo {
         }
     }
 
+
 }
+
+.espaco{
+    padding: 30px 0;
+    background-color: var(--corDeFundo);
+    position: relative;
+    
+}
+
+.pagContato{
+   
+    width: 100%;
+    padding: 50px 0;
+    position: relative;
+    
+
+    
+
+    .site{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+     
+
+        .infContato{ 
+   
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        >div {
+            width: 72%;
+
+        }
+        .titulo_contato div {
+            font-size: 3em;
+            font-weight: 700;
+            font-style: normal;
+           
+            
+            color: var(--white-color);
+            z-index: 10;
+            position: relative;
+            h2
+            {
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 15px;
+                text-transform: lowercase;
+            }
+        }
+    }
+    
+    form {
+        h4{
+            text-transform: uppercase;
+            color: var(--white-color);
+            margin-bottom: 10px;
+        }    
+        p{
+                color: var(--white-color);
+                font-family: 15px;
+            }
+
+        .forms{
+            margin-top: 20px;
+
+            .divisoes{
+                display: flex; 
+                gap: 68px;
+                margin: 30px 0 30px;
+                align-items: end;
+
+                
+                div{
+                    width: 43%;
+
+
+                    label{
+                        color: var(--white-color);
+                        width: 100%;
+                        font-size: 11pt;
+                        font-family: var(--heading-font-family);
+                    }
+
+                    input{
+                        border-radius: 0px;
+                        border: red 1px solid;
+                        width: 100%;
+                        height: 30px;
+                        padding: 0;
+                        background-color: var(--corDeFundo);;
+                    } 
+                }
+                
+            
+            }
+
+            .mensagem{
+                label{
+                    color: var(--white-color);
+                }
+
+                input{
+                    border-color: red;
+                   
+                }
+            }
+        
+
+        }
+
+
+
+    } 
+}
+
+.espaco{
+    background-color: var(--corDeFundo);
+    
+}
+
+form textarea {
+    width: 83%;
+    font-family: "Anton", sans-serif;
+    font-size: 12pt;
+    border-color: red;
+    background-color: var(--corDeFundo);
+    height: 124px;
+    resize: none;     /* tira o ajuste da caixa  */
+    margin-bottom: 20px;
+}
+
 
 footer {
     background: #000000;
@@ -1566,3 +1700,4 @@ footer {
 
     }
 }
+
