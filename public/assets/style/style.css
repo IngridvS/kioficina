@@ -1148,16 +1148,19 @@ header .logo {
         background-color: var(--primary-color);
         border: 0
     }
-    div{
+
+    div {
         top: 20px;
         position: relative;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: var(--white-color);
         font-family: var(--fontNoCorpo);
 
     }
+
     a:nth-last-child(2):hover {
         color: var(--primary-color);
         letter-spacing: 2px;
@@ -1267,7 +1270,7 @@ header .logo {
                 }
             }
 
-            
+
             :hover .team-member-inf p {
                 animation: entrarDeslizeDireita 0.5s forwards;
             }
@@ -1277,7 +1280,7 @@ header .logo {
                 animation: entrarDeslizeEsquerda 0.5s forwards;
             }
 
-      
+
             :not(:hover) .team-member-inf p {
                 animation: slideInLeft 0.5s forwards;
             }
@@ -1445,136 +1448,254 @@ header .logo {
 
 }
 
-.espaco{
+.espaco {
     padding: 30px 0;
     background-color: var(--corDeFundo);
     position: relative;
-    
+
 }
 
-.pagContato{
-   
-    width: 100%;
-    padding: 50px 0;
+
+/* pag do contato */
+.altura {
+    height: 100px;
     position: relative;
-    
+}
 
-    
+.espacoContato {
+    height: 125px;
+    position: relative;
 
-    .site{
+}
+
+
+.pagContato {
+    width: 100%;
+    position: relative;
+    font-family: var(--fontNoCorpo);
+
+
+    .site {
         display: flex;
         justify-content: space-between;
         width: 100%;
-     
+        gap: 1%;
+        font-family: var(--fontNoCorpo);
 
-        .infContato{ 
-   
-            display: flex;
-            justify-content: space-around;
-           
-        }
-        >div {
-            width: 72%;
 
-        }
-        .titulo_contato div {
-            font-size: 3em;
-            font-weight: 700;
-            font-style: normal;
-           
-            
-            color: var(--white-color);
-            z-index: 10;
-            position: relative;
-            h2
-            {
-                text-transform: uppercase;
+        .infContato {
+            max-width: 530px;
+            width: 100%;
+
+
+            h2 {
+                color: var(--white-color);
             }
-            p{
-                font-size: 15px;
-                text-transform: lowercase;
+
+            p {
+                color: var(--white-color);
+            }
+        }
+
+        .form_Contato {
+            width: 100%;
+
+            font-size: 15px;
+
+            h5 {
+                color: var(--titulos-color);
+                font-family: var(--titulos);
+            }
+
+            p {
+                color: var(--titulos-color);
+            }
+
+            form {
+                padding: 0;
+                margin-top: 20px;
+
+
+                .inputs {
+                    display: flex;
+                    gap: 30px;
+                    margin-bottom: 25px;
+
+                    input {
+                        color: #fff;
+                        background-color: transparent;
+                        padding: 12px 20px;
+                        border: 1px solid rgba(255, 255, 255, 0.25);
+                        flex: 1;
+                        outline: none;
+                    }
+
+                    input:focus {
+                        border-color: #fff !important;
+                        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.19);
+                    }
+
+                    .informs_inputs {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        position: relative;
+                        height: 61px;
+                        justify-content: flex-end;
+                        margin: 10px 0 10px;
+                    }
+
+                    .informs_inputs label {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: var(--titulos-color);
+                    }
+
+                    .informs_inputs input {
+                        color: #fff;
+                        border: 1px solid rgba(255, 61, 36, 0.4392156863);
+                    }
+
+                    .informs_inputs input:focus {
+                        border-color: rgba(255, 61, 36, 0.4392156863) !important;
+                        box-shadow: 0 0 0 0.25rem rgba(109, 10, 10, 0.486);
+                    }
+                }
+
+                .caixa_textarea {
+                    display: flex;
+                    margin-bottom: 45px;
+                    color: var(--white-color);
+
+                    textarea {
+
+                        width: 83%;
+                        font-family: "Anton", sans-serif;
+                        font-size: 12pt;
+                        border-color: red;
+                        background-color: var(--corDeFundo);
+                        height: 124px;
+                        resize: none;
+
+                    }
+
+                    textarea:focus {
+                        border-color: #fff !important;
+                        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.19);
+                    }
+
+                    .informs_inputs {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+
+                        textarea {
+                            color: var(--white-color);
+                            border: 1px solid rgba(255, 61, 36, 0.4392156863);
+                        }
+
+                        textarea:focus {
+                            border-color: rgba(255, 61, 36, 0.4392156863) !important;
+                            box-shadow: 0 0 0 0.25rem rgba(109, 10, 10, 0.486);
+                        }
+                    }
+                }
+
+                .enviar {
+                    padding: 20px 33px;
+                    display: inline-block;
+                    background-color: var(--primary-color);
+                    color: #D48201;
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: var(--heading-font-family);
+                    border: none;
+                    text-transform: uppercase;
+                    transform-style: preserve-3d;
+                    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+                    transform: translate3d(0, 0px, 0px);
+
+
+                }
+
+                button:hover {
+                    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+                    background-color: #D48201;
+                    color: var(--white-color);
+                    transform: translate3d(0px, -7px, 0.01px);
+                }
+
+
+
+
             }
         }
     }
-    
-    form {
-        h4{
-            text-transform: uppercase;
-            color: var(--white-color);
-            margin-bottom: 10px;
-        }    
-        p{
+
+}
+
+
+.pagContato2 {
+    width: 100%;
+    position: relative;
+    font-family: var(--fontNoCorpo);
+
+    .site {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1%;
+        font-family: var(--fontNoCorpo);
+
+
+
+        .infContato {
+            max-width: 530px;
+            width: 100%;
+
+
+            h2 {
                 color: var(--white-color);
-                font-family: 15px;
             }
 
-        .forms{
-            margin-top: 20px;
-
-            .divisoes{
-                display: flex; 
-                gap: 68px;
-                margin: 30px 0 30px;
-                align-items: end;
-
-                
-                div{
-                    width: 43%;
-
-
-                    label{
-                        color: var(--white-color);
-                        width: 100%;
-                        font-size: 11pt;
-                        font-family: var(--heading-font-family);
-                    }
-
-                    input{
-                        border-radius: 0px;
-                        border: red 1px solid;
-                        width: 100%;
-                        height: 30px;
-                        padding: 0;
-                        background-color: var(--corDeFundo);;
-                    } 
-                }
-                
-            
+            p {
+                color: var(--white-color);
             }
-
-            .mensagem{
-                label{
-                    color: var(--white-color);
-                }
-
-                input{
-                    border-color: red;
-                   
-                }
-            }
-        
-
         }
 
+        .formas_d_contato {
+            width: 100%;
+            z-index: 10;
 
+            .card {
+                padding: 50px;
+                display: flex;
+                font-weight: 700;
+                line-height: normal;
+                font-size: 24px;
+                width: 85%;
+                font-family: var(--heading-font-family);
+                justify-content: space-between;
+                color: #fff;
 
-    } 
-}
+                p{
+                    font-size: 16px;
+                    font-family: var(--fontNoCorpo);
+                }
+                .icon{
+                    display: flex;
+                    gap: 9%;
+                    width: 49%;
+                }
+            }
 
-.espaco{
-    background-color: var(--corDeFundo);
-    
-}
+            .card:nth-child(odd) {
+                background-color: #000;
+            }
+        }
 
-form textarea {
-    width: 83%;
-    font-family: "Anton", sans-serif;
-    font-size: 12pt;
-    border-color: red;
-    background-color: var(--corDeFundo);
-    height: 124px;
-    resize: none;     /* tira o ajuste da caixa  */
-    margin-bottom: 20px;
+    }
 }
 
 
@@ -1700,4 +1821,3 @@ footer {
 
     }
 }
-
