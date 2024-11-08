@@ -1616,17 +1616,14 @@ header .logo {
                     transition: background-color 0.4s, transform 0.3s, color 0.3s;
                     transform: translate3d(0, 0px, 0px);
 
-
                 }
 
-                button:hover {
+                .enviar:hover {
                     transition: background-color 0.4s, transform 0.3s, color 0.3s;
                     background-color: #D48201;
                     color: var(--white-color);
                     transform: translate3d(0px, -7px, 0.01px);
                 }
-
-
 
 
             }
@@ -1679,11 +1676,12 @@ header .logo {
                 justify-content: space-between;
                 color: #fff;
 
-                p{
+                p {
                     font-size: 16px;
                     font-family: var(--fontNoCorpo);
                 }
-                .icon{
+
+                .icon {
                     display: flex;
                     gap: 9%;
                     width: 49%;

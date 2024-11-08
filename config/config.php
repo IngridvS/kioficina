@@ -4,11 +4,19 @@
 define("BASE_URL","http://localhost/kioficina/");
 // criar const
 
-//config do data base 
+//Confinguração do Data Base
 define("DB_HOST","smpsistema.com.br");
-define('PORT_EMAIL', '465');
-define('USER_EMAIL','kioficinasmpsistema.com.br');
-define('PASS_EMAIL', 'Senac@tipi02');
+define("DB_NAME","");
+define("DB_USER","");
+define("DB_PASS","");
+ 
+ 
+//Configuração do Email
+define('EMAIL_HOST', 'smtp.hostinger.com');
+define('EMAIL_PORT', '465');
+define('EMAIL_USER', 'innovaclicktipi02@smpsistema.com.br');
+define('EMAIL_PASS', 'Senac@tipi02');
+ 
 
 
 // sistema de autoload das class

@@ -21,16 +21,7 @@
     <!-- header -->
     <?php require_once('template/topo.php');?>
 
-    <!--  
-        if(isset($mensagem)&& isset($status)){
-        if($status == 'sucesso'){
-            echo '<div class="Alerta-sucesso"> ' . $mensagem . '</div>';
-
-        }elseif($status == 'erro'){
-            echo '<div class="Alerta-erro"> ' . $mensagem . '</div';
-        }
-        }
-         -->
+    
 
     
     <div class="altura"></div>
@@ -56,12 +47,23 @@
                         alteration in some form, by injected humour</p>
                     
                 </div>
+
+                <?php
+                    if(isset($mensagem)&& isset($status)){
+                    if($status == 'sucesso'){
+                        echo '<div class="Alerta-sucesso"> ' . $mensagem . '</div>';
+
+                    }elseif($status == 'erro'){
+                        echo '<div class="Alerta-erro"> ' . $mensagem . '</div';
+                    }
+                    }
+                ?>
                
-                <form>
+                <form action="contato/enviarEmail" method="POST">
                     <div class="inputs">
                         <div class="informs_inputs">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" name="name" id="name" required>
+                            <label for="nome" class="form-label">Name</label>
+                            <input type="text" name="nome" id="nome" required>
                         </div>
                         <div class="informs_inputs">
                             <label for="email" class="form-label">Email*</label>
@@ -70,21 +72,21 @@
                     </div>
                     <div class="inputs">
                         <div class="informs_inputs">
-                            <label for="topic" class="form-label">Which topic best matches your question?</label>
-                            <input type="text" name="topic" id="topic" required>
+                            <label for="tel" class="form-label">telefone</label>
+                            <input type="tel" name="tel" id="tel" required>
                         </div>
                         <div class="informs_inputs">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" name="subject" id="subject" required>
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="text" name="assunto" id="assunto" required>
                         </div>
                     </div>
                     <div class="caixa_textarea">
                         <div class="informs_inputs">
-                            <label>Your Message*</label>
+                            <label for="msg" class="form-label">Mensagem</label>
                             <textarea name="msg" rows="5" id="msg" required></textarea>
                         </div>
                     </div>
-                    <button type="submit" id="submit" name="submit" class="enviar">SEND MESSAGE</button>
+                    <input type="submit" value="Enviar mensagem" class="enviar">Enviar</button>
                 </form>
             </div>
         </article>
