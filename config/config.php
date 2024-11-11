@@ -6,9 +6,9 @@ define("BASE_URL","http://localhost/kioficina/");
 
 //Confinguração do Data Base
 define("DB_HOST","smpsistema.com.br");
-define("DB_NAME","");
-define("DB_USER","");
-define("DB_PASS","");
+define("DB_NAME","u283879542_ingrid");
+define("DB_USER","u283879542_ingrid");
+define("DB_PASS","Ingrid@tipi02");
  
  
 //Configuração do Email

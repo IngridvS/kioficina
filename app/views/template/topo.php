@@ -1,7 +1,7 @@
 <header>
         <section class="site">
             <div class="logo">
-                <a href=""><img src="assets/img/SVG/logo.svg.svg" alt="logo"></a>
+                <a href=""><img src="http://localhost/kioficina/public/assets/img/SVG/logo.svg.svg" alt="logo"></a>
             </div>
 
             <nav class="menu">
@@ -18,7 +18,7 @@
             <div class="telefone">
                 <a href="tel:5511988626603">
                     <span class="animate__animated animate_heartBeat">
-                        <img src="assets/img/SVG/phone.svg" alt="Telefone KiOficina">
+                        <img src="http://localhost/kioficina/public/assets/img/SVG/phone.svg" alt="Telefone KiOficina">
                     </span>
                     <h6> 55 11 988 626 603</h6>
                 </a>

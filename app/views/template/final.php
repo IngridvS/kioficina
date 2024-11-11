@@ -141,7 +141,7 @@
                     <div class="telefone">
                         <a href="tel:5511988626603">
                             <span class="animate__animated animate_heartBeat">
-                                <img src="assets/img/SVG/phone.svg" alt="Telefone KiOficina">
+                                <img src="http://localhost/kioficina/public/assets/img/SVG/phone.svg" alt="Telefone KiOficina">
                             </span>
                             <h6> 55 11 988 626 603</h6>
                         </a>
@@ -181,7 +181,7 @@
                     <div class="email">
                         <a href="mailto:contato@kioficina.com.br">
                             <span>
-                                <img src="assets/img/SVG/email.svg" alt="Email KiOficina - Seu carro em boa mãos">
+                                <img src="http://localhost/kioficina/public/assets/img/SVG/email.svg" alt="Email KiOficina - Seu carro em boa mãos">
                             </span>
                             <h6>contato@kioficina.com.br</h6>
                         </a>
@@ -191,7 +191,7 @@
                         <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.025327722236!2d-46.4318621!3d-23.4955972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63dda7be6fb9%3A0xa74e7d5a53104311!2sSenac%20S%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1728648422733!5m2!1spt-BR!2sbr"
                             data-lity>
                             <span>
-                                <img src="assets/img/SVG/location.svg" alt="Email KiOficina - Seu carro em boa mãos">
+                                <img src="http://localhost/kioficina/public/assets/img/SVG/location.svg" alt="Email KiOficina - Seu carro em boa mãos">
                             </span>
                             <h6>contato@kioficina.com.br</h6>
                         </a>
@@ -200,7 +200,7 @@
                     <div class="agenda">
                         <a href="#">
                             <span>
-                                <img src="assets/img/SVG/calender.svg" alt="Email KiOficina - Seu carro em boa mãos">
+                                <img src="http://localhost/kioficina/public/assets/img/SVG/calender.svg" alt="Email KiOficina - Seu carro em boa mãos">
                             </span>
                             <h6>contato@kioficina.com.br</h6>
                         </a>
