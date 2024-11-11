@@ -1272,10 +1272,7 @@ header .logo {
 
 
             :hover .team-member-inf p {
-                animation: entrarDeslizeDireita 0.5s forwards;
-            }
-
-            :hover .equipe_info-social {
+                transition: all 0.3s ease-in-out;
                 opacity: 1;
                 animation: entrarDeslizeEsquerda 0.5s forwards;
             }
@@ -1450,9 +1447,44 @@ header .logo {
 
 .espaco {
     padding: 30px 0;
-    background-color: var(--corDeFundo);
     position: relative;
 
+}
+
+/* pag do sobre */
+.pagSobre{
+    background-image: url(../img/about-page-title.jpg);
+    background-size: cover;      /* Faz a imagem cobrir toda a área sem distorcer */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; 
+    height: 50vh;
+    width: 100%;
+   
+    
+    h3{
+        position: absolute;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 36px;
+      
+        font-weight: 500;
+        top: 40%;
+        color: var(--white-color);
+        position: relative;
+    }
+    p{
+        position: absolute;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 13px;
+      
+        font-weight: 500;
+        top: 40%;
+        color: var(--white-color);
+        position: relative;
+    }
 }
 
 
@@ -1616,14 +1648,17 @@ header .logo {
                     transition: background-color 0.4s, transform 0.3s, color 0.3s;
                     transform: translate3d(0, 0px, 0px);
 
+
                 }
 
-                .enviar:hover {
+                button:hover {
                     transition: background-color 0.4s, transform 0.3s, color 0.3s;
                     background-color: #D48201;
                     color: var(--white-color);
                     transform: translate3d(0px, -7px, 0.01px);
                 }
+
+
 
 
             }

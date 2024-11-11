@@ -86,7 +86,7 @@
                             <textarea name="msg" rows="5" id="msg" required></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Enviar mensagem" class="enviar">Enviar</button>
+                    <input type="submit" value="Enviar mensagem" class="enviar"></input>
                 </form>
             </div>
         </article>

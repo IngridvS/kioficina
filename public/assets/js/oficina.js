@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // Carrossel do banner
   $('.banner .slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -8,7 +9,7 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 1024,  // Para telas menores que 1024px
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -16,7 +17,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 768,   // Para telas menores que 768px (tablets)
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -24,7 +25,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 480,   // Para telas menores que 480px (celulares)
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -35,6 +36,7 @@ $(document).ready(function () {
     ]
   });
 
+  // Carrossel de Marcas
   $('.logo_client .clientes').slick({
     slidesToScroll: 1,
     slidesToShow: 7,
@@ -66,27 +68,18 @@ $(document).ready(function () {
         }
       }
     ]
+  });
 
-  })
-
+  // Carrossel de Depoimentos
   $('.depoimento .depos_cliente').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next'), /*chame do html para o js*/
+    nextArrow: $('.slick-next'),
     dots: false,
-    fade: true, /*ele faz com que a apresentação seja suave*/
+    fade: true, // Transição suave
     pauseOnHover: false,
   });
-
-
 });
-
-
-
-
-
-
-
