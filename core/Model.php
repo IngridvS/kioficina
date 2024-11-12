@@ -12,7 +12,9 @@ class Model{
         try {
             // criar a conexão com o banco de dados 
                                 // 'mysql:dbname=test;host=localhost', 'root',''
-            $this->db = new PDO('mysql:dbname='. DB_NAME .';host='. DB_HOST, DB_USER, DB_PASS);  //PDO" significa "PHP Data Objects. Permite acesso seguro e orientado a objetos a bancos de dados. 
+            $this->db = new PDO('mysql:dbname='. DB_NAME .';host='. DB_HOST, DB_USER, DB_PASS, [
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8mb4'; SET time_zone = '-03:00'"
+            ]);  //PDO" significa "PHP Data Objects. Permite acesso seguro e orientado a objetos a bancos de dados. 
             
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {

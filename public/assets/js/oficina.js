@@ -1,3 +1,33 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const visao = document.getElementById('visao');
+  const historia = document.getElementById('historia');
+  const missao = document.getElementById('missao');
+  const conteudoVisao = document.getElementById('conteudoVisao');
+  const conteudohistoria = document.getElementById('conteudohistoria');
+  const conteudoMissao = document.getElementById('conteudoMissao');
+
+  visao.addEventListener('click', function () {
+      conteudoVisao.classList.add('ativo');
+      conteudohistoria.classList.remove('ativo');
+      conteudoMissao.classList.remove('ativo');
+  });
+
+  historia.addEventListener('click', function () {
+      conteudoVisao.classList.remove('ativo');
+      conteudohistoria.classList.add('ativo');
+      conteudoMissao.classList.remove('ativo');
+  });
+
+  missao.addEventListener('click', function () {
+      conteudoVisao.classList.remove('ativo');
+      conteudohistoria.classList.remove('ativo');
+      conteudoMissao.classList.add('ativo');
+  });
+});
+
+
+
+
 $(document).ready(function () {
   // Carrossel do banner
   $('.banner .slide').slick({

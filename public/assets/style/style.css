@@ -120,7 +120,7 @@ a {
 
 .espaco {
     height: 125px;
-    background-color: #1b1b1b;
+
 }
 
 .espacomin {
@@ -539,7 +539,6 @@ header .logo {
 
 .servicos {
     padding: 50px 0;
-    background-color: #1b1b1b;
     position: relative;
     z-index: 2;
 
@@ -655,7 +654,7 @@ header .logo {
 }
 
 .escolha {
-    background-color: #1b1b1b;
+
     width: 100%;
 
     .site {
@@ -729,7 +728,7 @@ header .logo {
 }
 
 .service {
-    background-color: #1b1b1b;
+
     width: 100%;
 
     .site {
@@ -898,8 +897,6 @@ header .logo {
 }
 
 .numeros {
-
-    background-color: #1b1b1b;
     width: 100%;
 
     .site {
@@ -931,7 +928,6 @@ header .logo {
 
 
 .logo_client {
-    background-color: #1b1b1b;
     width: 100%;
 
     .site {
@@ -984,7 +980,6 @@ header .logo {
 
 
 .depoimento {
-    background-color: #1b1b1b;
     width: 100%;
 
     .site {
@@ -1170,7 +1165,6 @@ header .logo {
 }
 
 .time_oficina {
-    background-color: #1b1b1b;
     width: 100%;
 
     .site>div {
@@ -1345,7 +1339,6 @@ header .logo {
 
 
 .blog {
-    background-color: #1b1b1b;
     width: 100%;
 
 
@@ -1452,38 +1445,99 @@ header .logo {
 }
 
 /* pag do sobre */
-.pagSobre{
+.pagSobre {
     background-image: url(../img/about-page-title.jpg);
-    background-size: cover;      /* Faz a imagem cobrir toda a área sem distorcer */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; 
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área sem distorcer */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
-   
-    
-    h3{
+
+
+    h3 {
         position: absolute;
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
         font-size: 36px;
-      
+
         font-weight: 500;
         top: 40%;
         color: var(--white-color);
         position: relative;
     }
-    p{
+
+    p {
         position: absolute;
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
         font-size: 13px;
-      
+
         font-weight: 500;
         top: 40%;
         color: var(--white-color);
         position: relative;
+    }
+
+
+
+}
+
+.pagSobre_valores {
+    width: 100%;
+
+    .espaco {
+        height: 125px;
+        padding: 0;
+    }
+
+    .site {
+
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+
+        .valores {
+            text-align: start;
+            align-self: center;
+            margin: 20px;
+            font-size: 25pt;
+            color: var(--white-color);
+        }
+
+        .listasValores ul {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+
+        }
+
+        ul li {
+            cursor: pointer;
+            color: var(--white-color);
+            font-size: 20px;
+
+        }
+
+        .textoValores {
+            display: none;
+
+            p {
+                line-height: 35px;
+                position: relative;
+            }
+        }
+
+        .ativo {
+            display: block;
+        }
+
+
     }
 }
 

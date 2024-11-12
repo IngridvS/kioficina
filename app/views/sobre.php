@@ -30,45 +30,28 @@
 
     </div>
 
-    <section class="pagSobre_valores">
+    <section class="pagSobre_valores"> 
+        <div class="espaco"></div>
         <article class="site">
-            
-            <ul>
-                <li class="active-valores">Mission</li>
-                <li>Vision</li>
-                <li>History</li>
-            </ul>
-
-            <div class="tabs-content">
-                <div class="list">
-                    <div class="ak-section-heading ak-style-1 ak-type-1">
-                        <div class="background-text">About Company</div>
-                        <h3 class="desp">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the
-                            printing
-                            and typesetting industry.</h3>
-                    </div>
-                </div>
-                <div class="list">
-                    <div class="ak-section-heading ak-style-1 ak-type-1">
-                        <div class="background-text">About Company</div>
-                        <h3 class="desp"> Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            been the industry's stanLorem Ipsum has.
-                        </h3>
-                    </div>
-                </div>
-                <div class="list">
-                    <div class="ak-section-heading ak-style-1 ak-type-1">
-                        <div class="background-text">About Company</div>
-                        <h3 class="desp"> Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has
-                            been the industry's stan.</h3>
-                    </div>
-                </div>
+       
+            <div class="listasValores">
+                <ul>
+                    <li id="missao">Mission</li>
+                    <li id="visao">Vision</li>
+                    <li id="historia">History</li>
+                </ul>
             </div>
+                
+            
+
+            <div class="valores">  
+                <div id="conteudoMissao" class="textoValores"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, exercitationem.</p></div>
+                <div id="conteudoVisao" class="textoValores ativo"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita numquam quisquam blanditiis sapiente placeat similique natus officia reprehenderit praesentium quam.</p></div>
+                <div id="conteudohistoria" class="textoValores"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, molestias eveniet. Possimus ducimus voluptatibus debitis odio illum sunt a explicabo minus numquam suscipit cumque recusandae provident neque, excepturi unde tenetur.</p></div>
+            </div>
+
         
+
         </article>
     </section>
 
