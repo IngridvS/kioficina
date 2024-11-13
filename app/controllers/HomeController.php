@@ -9,7 +9,18 @@ class HomeController extends Controller{
        $dados = array();
        
        $dados['mensagem'] = 'Bem vindo a KiOficina';
-       $dados['nome'] = 'Ingrid';
+       
+       //Instanciar o modelo servico
+
+       $servicoModel = new Servico();
+       $servicoAleatorio = $servicoModel->getServicoAleatorio();
+        //  var_dump($servicoAleatorio);
+
+        $dados['servicos'] = $servicoAleatorio;
+
+        //var_dump($dados);
+
+
 
        //var_dump($dados);
 
