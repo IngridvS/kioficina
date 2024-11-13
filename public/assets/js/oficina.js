@@ -70,7 +70,7 @@ $(document).ready(function () {
   $('.logo_client .clientes').slick({
     slidesToScroll: 1,
     slidesToShow: 7,
-    autoplay: true,
+    
     autoplaySpeed: 2000,
     arrows: false,
     dots: false,

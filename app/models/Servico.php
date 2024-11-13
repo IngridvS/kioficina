@@ -17,7 +17,7 @@ class Servico extends Model{
     }
     //metodo listas tds os serviços ativos por ordem alfabetica 
 
-    public function getServicoAleatorio{
-        $sql= "select * from "
-    }
+    // public function getServicoAleatorio{
+    //     $sql= "select * from "
+    // }
 }
