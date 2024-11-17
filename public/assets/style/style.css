@@ -1917,6 +1917,24 @@ header .logo {
         max-width: 1200px;
         padding: 0 20px;
 
+        .titulo{
+
+            h3{
+                color: var(--titulos-color);
+                font-family: var(--titulos);
+            }
+            p{
+                color: var(--titulos-color);
+                font-family: var(--fontNoCorpo);
+            }
+            hr{
+                background-color: var(--primary-color);
+                height: 2px;
+                border: 0;
+                width: 100%;
+            }
+        }
+
         .organiza {
             margin-top: 60px;
             display: flex;
