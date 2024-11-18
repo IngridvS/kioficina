@@ -12,14 +12,31 @@ class ServicoController extends Controller
         $servicoModel = new Servico();
         $servicoOrdem = $servicoModel->getServicosOrdem();  //busca
         
-        // Selecionar um serviço aleatório
-        $servicoodens = $servicoOrdem[array_rand($servicoOrdem)]; // Pega um serviço aleatório  
-        $dados['servico'] = $servicoodens;
+        $dados['servicos'] = $servicoOrdem;
         
 
         //var_dump($servicoOrdem);
 
 
         $this->carregarViews('servico', $dados);
+    }
+
+    public function detalhe($link){
+       $dados = array();
+
+       $servicoModel = new Servico ();
+       $detalheServico = $servicoModel->getServicoPorLink($link);
+
+
+        // var_dump($detalheServico);
+
+        if($detalheServico){
+            $dados['titulo'] = $detalheServico['nome_servico'];
+            $dados['detalhes'] = $detalheServico;
+            $this->carregarViews('detalhes_servico', $dados);
+        }else{
+           $dados['titulo'] = 'Servico ki oficina';
+            $this->carregarViews('servicos', $dados);
+        }
     }
 }

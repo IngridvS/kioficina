@@ -1,19 +1,21 @@
 <?php
 
-class HomeController extends Controller{
+class HomeController extends Controller
+{
     // ele passa a usar tdo que está na controller
     // extends - consigo usar além 
-    
-    public function index(){
 
-       $dados = array();
-       
-       $dados['mensagem'] = 'Bem vindo a KiOficina';
-       
-       //Instanciar o modelo servico
+    public function index()
+    {
 
-       $servicoModel = new Servico();
-       $servicoAleatorio = $servicoModel->getServicoAleatorio();
+        $dados = array();
+
+        $dados['mensagem'] = 'Bem vindo a KiOficina';
+
+        //Instanciar o modelo servico
+
+        $servicoModel = new Servico();
+        $servicoAleatorio = $servicoModel->getServicoAleatorio();
         //  var_dump($servicoAleatorio);
 
         $dados['servicos'] = $servicoAleatorio;
@@ -21,12 +23,18 @@ class HomeController extends Controller{
         //var_dump($dados);
 
 
+        //Instanciar a equipe
+        $funcionarioModel = new FuncionarioModel();
+        $servicoFuncionario = $funcionarioModel->getFuncionarioAleatorio();  //busca
 
-       //var_dump($dados);
+        $dados['funcionarios'] = $servicoFuncionario;
 
-       $this -> carregarViews('home', $dados);
-    //    faz referencia a algo interno, carregar dados 
+
+
+
+
+
+        $this->carregarViews('home', $dados);
+        //    faz referencia a algo interno, carregar dados 
     }
-    
-    
 }

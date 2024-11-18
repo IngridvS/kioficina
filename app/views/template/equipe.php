@@ -20,28 +20,33 @@
             </div>
 
             <div class="team-container">
-                <div class="team">
-                    <div class="team-member" style="background-image: url(assets/img/team_1.jpg);">
-                        <div class="team-member-inf">
-                            <div class="equipes">
-                                <a href="">Alle Palmeira</a>
-                                <p>Especialista em Motores Diesel</p>
+                <?php foreach ($funcionarios as $funcionario): ?>
+                    <div class="team">
+
+                        <div class="team-member" style="background-image: url(assets/img/team_1.jpg);">
+                            <div class="team-member-inf">
+                                <div class="equipes">
+                                    <a href=""> <?php echo htmlspecialchars($funcionario['nome_funcionario'], ENT_QUOTES, 'UTF-8'); ?></a>
+                                    <p> <?php echo htmlspecialchars($funcionario['cargo_funcionario'], ENT_QUOTES, 'UTF-8'); ?></p>
+                                </div>
+                                <div class="equipe_info-social">
+                                    <a href="https://www.facebook.com/" class="icon"><img
+                                            src="assets/img/SVG/linkedinicon.svg" alt="..."></a>
+                                    <a href="https://bd.linkedin.com/" class="icon"><img
+                                            src="assets/img/SVG/instagramicon.svg" alt=""></a>
+                                    <a href="https://www.instagram.com/" class="icon"><img
+                                            src="assets/img/SVG/twittericon.svg" alt=""></a>
+                                </div>
                             </div>
-                            <div class="equipe_info-social">
-                                <a href="https://www.facebook.com/" class="icon"><img
-                                        src="assets/img/SVG/linkedinicon.svg" alt="..."></a>
-                                <a href="https://bd.linkedin.com/" class="icon"><img
-                                        src="assets/img/SVG/instagramicon.svg" alt=""></a>
-                                <a href="https://www.instagram.com/" class="icon"><img
-                                        src="assets/img/SVG/twittericon.svg" alt=""></a>
-                            </div>
+
+
                         </div>
 
-
                     </div>
-                </div>
+                <?php endforeach ?>
 
-                <div class="team">
+
+                <!-- <div class="team">
                     <div class="team-member" style="background-image: url(assets/img/team_2.jpg);">
                         <div class="team-member-inf">
                             <div class="equipes">
@@ -60,8 +65,8 @@
 
 
                     </div>
-                </div>
-                <div class="team">
+                </div> -->
+                <!-- <div class="team">
                     <div class="team-member" style="background-image: url(assets/img/team_3.jpg);">
                         <div class="team-member-inf">
                             <div class="equipes">
@@ -80,7 +85,7 @@
 
 
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>

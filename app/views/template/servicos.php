@@ -32,18 +32,18 @@
                     <div class="ki-servicos-card">
                         <a class="img_card_servico" href="#">
                             <img src=" <?php
-                            $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $servico['foto_servico'];
-                            if ($servico['foto_servico'] != ""){
+                            $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $servico['foto_galeria'];
+                            if ($servico['foto_galeria'] != ""){
                                 if (file_exists($caminhoArquivo)){
-                                    echo "http://localhost/kioficina/public/uploads/" . htmlspecialchars($servico['foto_servico'], ENT_QUOTES, 'UTF-8');
+                                    echo "http://localhost/kioficina/public/uploads/" . htmlspecialchars($servico['foto_galeria'], ENT_QUOTES, 'UTF-8');
                                 }else{
                                 
-                                echo("http://localhost/kioficina/public/uploads/servico/sem_foto_servico.png");
+                                echo("http://localhost/kioficina/public/uploads/galeria/sem_foto_servico.png");
 
                                 }
 
                             }else{
-                                echo("http://localhost/kioficina/public/uploads/servico/sem_foto_servico.png");
+                                echo("http://localhost/kioficina/public/uploads/galeria/sem_foto_servico.png");
 
                             }
                             ?>" alt="...">
@@ -73,3 +73,5 @@
 
     </article>
 </section>
+
+

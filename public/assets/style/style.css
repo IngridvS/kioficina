@@ -1939,7 +1939,7 @@ header .logo {
             margin-top: 60px;
             display: flex;
             justify-content: space-between;
-           height: 357px;
+           flex-wrap: wrap;
             width: 106%;
         }
     

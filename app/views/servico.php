@@ -21,7 +21,9 @@
     <!-- header -->
     <?php require_once('template/topo.php');?>
 
-    <?php require_once('template/servico_two.php');?>
+    <?php require_once('template/servico_two.php');?> 
+
+
 
 
      <!-- footer -->
