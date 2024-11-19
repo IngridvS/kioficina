@@ -36,7 +36,7 @@
                         <div>
                             <h4><?php echo htmlspecialchars($servico['nome_servico'], ENT_QUOTES, 'UTF-8'); ?></h4>
                             <p> <?php echo htmlspecialchars($servico['descricao_servico'], ENT_QUOTES, 'UTF-8'); ?></p>
-                            <a href="<?php echo"servico/detalhes/" . htmlspecialchars ($servico['link_servico'], ENT_QUOTES, 'UTF-8');  ?>">ver mais</a>
+                            <a href="<?php echo"servico/detalhe/" . htmlspecialchars ($servico['link_servico'], ENT_QUOTES, 'UTF-8');?>">ver mais</a>
 
                         </div>
                     </div>

@@ -33,7 +33,7 @@ class Servico extends Model
     // metodo para carregar o servico pelo link 
     public function getServicoPorLink($link){
 
-        $sql = "SELECT  tbl_servico.*, tbl_galeria. * FROM tbl_servico INNER JOIN tbl_galeria ON tbl_servico .id_servico = tbl_galeria.id_galeria WHERE  status_servico = 'Ativo' AND link_servico = :link";
+        $sql = "SELECT tbl_servico.*, tbl_galeria. * FROM tbl_servico INNER JOIN tbl_galeria ON tbl_servico .id_servico = tbl_galeria.id_galeria WHERE  status_servico = 'Ativo' AND link_servico = :link";
 
         $stmt = $this->db->prepare($sql);
         // PDO::prepare — Prepara uma instrução para execução e retorna um objeto de instrução

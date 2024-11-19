@@ -22,17 +22,18 @@ class ServicoController extends Controller
     }
 
     public function detalhe($link){
+       // var_dump($link);
        $dados = array();
 
-       $servicoModel = new Servico ();
+       $servicoModel = new Servico();
        $detalheServico = $servicoModel->getServicoPorLink($link);
 
 
-        // var_dump($detalheServico);
+       // var_dump($detalheServico);
 
         if($detalheServico){
             $dados['titulo'] = $detalheServico['nome_servico'];
-            $dados['detalhes'] = $detalheServico;
+            $dados['detalhe'] = $detalheServico;
             $this->carregarViews('detalhes_servico', $dados);
         }else{
            $dados['titulo'] = 'Servico ki oficina';
