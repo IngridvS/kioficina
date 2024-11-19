@@ -6,7 +6,7 @@ class Controller{
     
         extract($dados);
 
-        require '../app/views/' . $view . '.php';
+        require '../app/views/'. $view .'.php';
         //        ../app/views/servico.php
     }
 

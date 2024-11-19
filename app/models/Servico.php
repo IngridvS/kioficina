@@ -5,7 +5,7 @@ class Servico extends Model
     //METODO PARA PEGAR SOMENTE 3 SERVICOS DE FORMA ALEATORIA
     public function getServicoAleatorio($limite = 3)
     {
-        $sql = "select s.id_servico, s.nome_servico, g.foto_galeria, g.alt_galeria from tbl_servico s inner join tbl_galeria g on s.id_servico = g.id_servico where status_servico = 
+        $sql = "select s.id_servico, s.nome_servico, s.descricao_servico, g.foto_galeria, g.alt_galeria from tbl_servico s inner join tbl_galeria g on s.id_servico = g.id_servico where status_servico = 
         'Ativo' order by rand() limit :limite";
         $stmt = $this->db->prepare($sql);
         // PDO::prepare — Prepara uma instrução para execução e retorna um objeto de instrução
