@@ -69,8 +69,8 @@ $(document).ready(function () {
   // Carrossel de Marcas
   $('.logo_client .clientes').slick({
     slidesToScroll: 1,
-    slidesToShow: 7,
-    
+    slidesToShow: 5,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     dots: false,
@@ -104,12 +104,12 @@ $(document).ready(function () {
   $('.depoimento .depos_cliente').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: $('.slick-prev'),
     nextArrow: $('.slick-next'),
     dots: false,
     fade: true, // Transição suave
-    pauseOnHover: false,
+    pauseOnHover: true,
   });
 });

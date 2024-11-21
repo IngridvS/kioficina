@@ -31,6 +31,18 @@ class HomeController extends Controller
 
 
 
+        // instaciar o depoimento 
+        $depoimentoModel = new DepoimentoModel();
+        $depoimentoCliente = $depoimentoModel->getDepoimentoAleatorio();
+
+        $dados['depoimentos'] = $depoimentoCliente;
+
+
+        //instanciar marca
+        $marcamodel = new MarcaModel();
+        $marcaConfiavel = $marcamodel->getMarcaAleatorio();
+        
+        $dados['marcas'] = $marcaConfiavel;
 
 
 
