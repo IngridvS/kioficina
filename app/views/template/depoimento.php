@@ -52,7 +52,20 @@
                     </div>
 
                     <div>
-                        <img src="assets/img/testimaonial-jessica.png" alt="..." class="depo-slide-img">
+                        <img class="depo-slide-img" src="<?php
+                                                            $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $depoimento['foto_cliente'];
+                                                            if ($depoimento['foto_cliente'] != "") {
+                                                                if (file_exists($caminhoArquivo)) {
+                                                                    echo "http://localhost/kioficina/public/uploads/" . htmlspecialchars($depoimento['foto_cliente'], ENT_QUOTES, 'UTF-8');
+                                                                } else {
+
+
+                                                                    echo ("http://localhost/kioficina/public/uploads/cliente/sem_foto.png");
+                                                                }
+                                                            } else {
+                                                                echo ("http://localhost/kioficina/public/uploads/cliente/sem_foto.png");
+                                                            }
+                                                            ?>" alt=<?php echo htmlspecialchars($depoimento['alt_foto_cliente'], ENT_QUOTES, 'UTF-8'); ?>>
                         <img class="fundo-img" src="assets/img/testimaonial-img-bg.png" alt="...">
                     </div>
 

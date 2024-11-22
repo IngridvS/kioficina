@@ -163,7 +163,7 @@ a {
 }
 
 header {
-  position: absolute;
+    position: absolute;
     /* header sobre o banner */
     top: 0;
     left: 0;
@@ -283,8 +283,8 @@ header .logo {
 
 .banner {
     position: relative;
-    
-    header{
+
+    header {
         position: absolute;
     }
 
@@ -551,11 +551,14 @@ header .logo {
         margin-top: 60px;
         display: flex;
         justify-content: space-between;
+
+
         height: 442px;
         width: 106%;
     }
 
     .organiza .caixa {
+        flex-wrap: wrap;
         width: 408px;
         height: 430px;
 
@@ -1049,6 +1052,17 @@ header .logo {
         width: 100%;
     }
 
+    .clientes {
+
+        .item {
+            p {
+                font-size: 10px;
+                text-align: center;
+                color: yellow;
+            }
+        }
+    }
+
     h4 {
         text-align: center;
         padding: 0 0 70px;
@@ -1089,6 +1103,7 @@ header .logo {
         min-height: 1px;
         display: block !important;
     }
+
 
 
 }
@@ -1173,7 +1188,7 @@ header .logo {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        gap:46px;
+        gap: 46px;
 
 
         h5 {
@@ -1343,7 +1358,7 @@ header .logo {
                         opacity: 1;
                         position: absolute;
                         color: #fff;
-                        right: 0;
+                        right: 65px;
                         transition: all 0.5s ease-in-out;
                     }
 
@@ -1909,7 +1924,7 @@ header .logo {
     z-index: 2;
 
 
-    .espaco{
+    .espaco {
         height: 17px;
     }
 
@@ -1918,17 +1933,19 @@ header .logo {
         max-width: 1200px;
         padding: 0 20px;
 
-        .titulo{
+        .titulo {
 
-            h3{
+            h3 {
                 color: var(--titulos-color);
                 font-family: var(--titulos);
             }
-            p{
+
+            p {
                 color: var(--titulos-color);
                 font-family: var(--fontNoCorpo);
             }
-            hr{
+
+            hr {
                 background-color: var(--primary-color);
                 height: 2px;
                 border: 0;
@@ -1940,28 +1957,28 @@ header .logo {
             margin-top: 60px;
             display: flex;
             justify-content: space-between;
-           flex-wrap: wrap;
+            flex-wrap: wrap;
             width: 106%;
         }
-    
+
         .organiza .caixa {
             width: 408px;
-           height: 342px;
-    
+            height: 342px;
+
         }
-    
-    
+
+
         .caixa>div {
-    
+
             display: flex;
             justify-content: space-between;
             gap: 25px;
             align-items: center;
             margin-bottom: 25px;
         }
-    
+
         .caixa .inf {
-    
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1972,23 +1989,23 @@ header .logo {
             font-size: 16px;
             height: 234px;
             color: #fff;
-    
+
         }
-    
+
         .caixa div h4 {
             color: var(--titulos-color);
             font-size: 13pt;
             margin-bottom: 10px;
-    
+
         }
-    
+
         .caixa div p {
             color: var(--titulos-color);
             font-size: 10pt;
             margin-bottom: 10px;
-    
+
         }
-    
+
         .destaque-info {
             display: flex;
             flex-direction: column;
@@ -1998,9 +2015,9 @@ header .logo {
             text-align: center;
             font-size: 16px;
             height: 200px;
-    
+
         }
-    
+
         .destaque_icon span {
             display: flex;
             align-items: center;
@@ -2012,7 +2029,7 @@ header .logo {
             z-index: 1;
             position: relative;
         }
-    
+
         .destaque_icon span::after {
             content: '';
             position: absolute;
@@ -2026,12 +2043,258 @@ header .logo {
             animation: wave 1.5s infinite;
             z-index: 0;
         }
+
         span {
             width: 50px;
             height: 50px;
         }
     }
 }
+
+
+
+/* detalhes pag */
+.detalhespag {
+    width: 100%;
+    position: relative;
+    font-family: var(--fontNoCorpo);
+
+    .site {
+        width: 100%;
+
+        .titulo {
+            div {
+                h3 {
+                    color: var(--titulos-color);
+                    font-family: var(--titulos);
+                    font-size: 30px;
+
+                }
+
+                div {
+                    display: flex;
+                    color: var(--white-color);
+                    font-weight: 400;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--white-color);
+                    }
+                }
+
+
+            }
+
+            hr {
+                background-color: var(--primary-color);
+                border: 0;
+                height: 1px;
+                width: 100%;
+            }
+        }
+
+        .espaco {
+            height: 65px;
+            padding: 0;
+        }
+
+
+
+        .detalhesinf {
+            display: flex;
+            justify-content: space-between;
+            gap: 3%;
+            font-family: var(--fontNoCorpo);
+            width: 50%;
+
+            .single-list {
+
+                h4 {
+                    color: var(--white-color);
+                    font-family: var(--fontNoCorpo);
+                }
+
+                p {
+                    color: ;
+                    margin: 0 0 20px;
+                    font-weight: 400;
+                    line-height: 24px
+                }
+            }
+
+
+            .sessao_fotos_inf {
+                width: 100%;
+                display: flex;
+                gap: 2%;
+            }
+
+            .sidebar {
+                
+                width: 100%;
+                top: 0;
+                max-width: inherit;
+                float: right;
+            }
+
+            .sidebar.fixed {
+                position: fixed;
+            }
+
+            .sidebar .service-card-style-2 {
+                width: 420px;
+            }
+
+            .sidebar.width-none {
+                width: 40% !important;
+            }
+
+        }
+
+    }
+}
+
+
+/*--------------------------------------------------------------
+27. Sticky Content
+----------------------------------------------------------------*/
+.sticky-content {
+    display: flex;
+    gap: 50px;
+    flex-direction: column-reverse;
+}
+
+.sticky-content .content.style_2 .service {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1380px) {
+    .sticky-content .content.style_2 .service {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sticky-content {
+        width: 100%;
+        position: relative;
+    }
+
+    .sticky-content 
+
+    .sticky-content 
+
+    .sticky-content 
+
+    .sticky-content 
+
+    .sticky-content .content {
+        float: left;
+        width: calc(100% - 420px);
+        padding-right: 15px;
+    }
+
+    .sticky-content .content.style_2 {
+        float: left;
+        padding-right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .sticky-content .content.style_2 .service {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/*--------------------------------------------------------------
+    28. Gallery
+  ----------------------------------------------------------------*/
+.lg-custom-thumbnails {
+    background-color: #040d10;
+}
+
+.lg-custom-thumbnails #lg-counter {
+    color: #fff;
+}
+
+.lg-custom-thumbnails .lg-icon {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.lg-custom-thumbnails .lg-icon:hover {
+    color: #ff3d24;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(3fr, 1fr));
+    grid-auto-rows: minmax(350px, 200px);
+    grid-auto-flow: dense;
+}
+
+.gallery .item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .frame {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    transition: all 0.5s ease;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition-delay: 0.1s;
+}
+
+.gallery .frame span {
+    width: 26px;
+    height: 26px;
+}
+
+.gallery .item:hover .frame {
+    top: 0;
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+.gallery .item:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.gallery .vertical {
+    grid-column: span 2;
+}
+
+.gallery .horizontal {
+    grid-row: span 2;
+}
+
+.gallery .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/*# sourceMappingURL=style.css.map */
 
 
 footer {

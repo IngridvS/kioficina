@@ -12,6 +12,14 @@ class HomeController extends Controller
 
         $dados['mensagem'] = 'Bem vindo a KiOficina';
 
+
+
+        //instanciar especialidade
+        $especialidadeModel = new EspecialidadeModel();
+        $especialidadeAleatorio = $especialidadeModel->getEspecialidadeAleatorio();
+        $dados['especialidades'] = $especialidadeAleatorio;
+
+
         //Instanciar o modelo servico
 
         $servicoModel = new Servico();
@@ -21,6 +29,9 @@ class HomeController extends Controller
         $dados['servicos'] = $servicoAleatorio;
 
         //var_dump($dados);
+
+
+
 
 
         //Instanciar a equipe

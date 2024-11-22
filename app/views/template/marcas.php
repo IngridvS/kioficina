@@ -5,32 +5,28 @@
 
             <div class="clientes">
 
-                <?php foreach($marcas as $marca):?>
+                <?php foreach ($marcas as $marca): ?>
 
-                <div class="item"><a href="">
-                    <img src="<?php
-                            $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $marca['logo_marca'];
-                            if ($marca['logo_marca'] != ""){
-                                if (file_exists($caminhoArquivo)){
-                                    echo "http://localhost/kioficina/public/uploads/" . htmlspecialchars($marca['logo_marca'], ENT_QUOTES, 'UTF-8');
-                                }else{
-                                
-                                 echo("http://localhost/kioficina/public/uploads/logo/sem_foto.png");
+                    <div class="item"><a href="">
+                            <img src="<?php
+                                        $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $marca['logo_marca'];
+                                        if ($marca['logo_marca'] != "") {
+                                            if (file_exists($caminhoArquivo)) {
+                                                echo "http://localhost/kioficina/public/uploads/" . htmlspecialchars($marca['logo_marca'], ENT_QUOTES, 'UTF-8');
+                                            } else {
+                                                
 
-                                }
+                                                echo ("http://localhost/kioficina/public/uploads/logo/sem_foto.png");
+                                            }
+                                        } else {
+                                            echo ("http://localhost/kioficina/public/uploads/logo/sem_foto.png");
+                                        }
+                                        ?>" alt=<?php echo htmlspecialchars($marca['alt_marca'], ENT_QUOTES, 'UTF-8'); ?>></a>
+                        
 
-                            }else{
-                                echo("http://localhost/kioficina/public/uploads/logo/sem_foto.png");
+                    </div>
 
-                            }
-                            ?>" alt=<?php echo htmlspecialchars($marca['alt_marca'], ENT_QUOTES, 'UTF-8'); ?>></a>
-                </div>
-
-
-                
-
-
-                <!-- 
+                    <!-- 
                 <div class="item"><a href=""><svg fill="yellow" width="80px" height="70px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.905 9.784H15.92V8.246a.157.157 0 0 0-.157-.158H8.238a.157.157 0 0 0-.157.158v1.538H2.358c-.087 0-.193.07-.237.158L.02 14.058c-.045.088-.011.157.077.157H8.08v1.54c0 .086.07.157.157.157h7.525c.087 0 .157-.07.157-.157v-1.54h5.723c.087 0 .193-.07.238-.157l2.1-4.116c.045-.087.011-.158-.076-.158m-2.494.996-1.244 2.437h-5.232v1.708H9.07v-1.708H2.595L3.84 10.78h5.232V9.073h5.864v1.707z" />
                         </svg></a>
@@ -189,7 +185,7 @@
                         </svg></a>
                 </div> -->
 
-                <?php endforeach?>
+                <?php endforeach ?>
 
             </div>
         </div>
