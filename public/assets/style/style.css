@@ -2053,7 +2053,7 @@ header .logo {
 
 
 
-/* detalhes pag */
+/* detalhes pag
 .detalhespag {
     width: 100%;
     position: relative;
@@ -2157,7 +2157,7 @@ header .logo {
 
 /*--------------------------------------------------------------
 27. Sticky Content
-----------------------------------------------------------------*/
+----------------------------------------------------------------
 .sticky-content {
     display: flex;
     gap: 50px;
@@ -2213,7 +2213,7 @@ header .logo {
 
 /*--------------------------------------------------------------
     28. Gallery
-  ----------------------------------------------------------------*/
+  ----------------------------------------------------------------
 .lg-custom-thumbnails {
     background-color: #040d10;
 }
@@ -2292,7 +2292,7 @@ header .logo {
 .gallery .big {
     grid-column: span 2;
     grid-row: span 2;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
 
