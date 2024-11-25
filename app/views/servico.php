@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<?php BASE_URL ?>http://localhost/kioficina/public/assets/img/SVG/favicon.svg">
 
     <title><?php echo isset($titulo) ? $titulo : 'Serviços - Ki Oficina'; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />

@@ -24,5 +24,16 @@
                 </a>
             </div>
 
+
+            <div class="login">
+                <a href="" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                    <span>
+                        <img src="http://localhost/kioficina/public/assets/img/SVG/user-solid.svg" alt="Login Kioficina">
+                    </span>
+                </a>
+
+            </div>
+            <div class="border-menu"></div>
+
         </section>
 </header>

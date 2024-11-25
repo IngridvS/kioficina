@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<?php BASE_URL ?>http://localhost/kioficina/public/assets/img/SVG/favicon.svg">
 
     <title>KiOficina</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php BASE_URL ?>assets/style/reset.css" />
     <link rel="stylesheet" type="text/css" href="/style/slick.css" />
     <link rel="stylesheet" type="text/css" href="/style/slick-theme.css" />
+
     <link rel="stylesheet" href="assets/style/lity.css">
     <link rel="stylesheet" href="assets/style/style.css" />
 
@@ -18,7 +21,7 @@
 
 <body>
     <!-- header -->
-    <?php require_once('template/topo.php');?>
+    <?php require_once('template/topo.php'); ?>
 
     <main>
         <section class="banner">
@@ -190,7 +193,7 @@
 
         <!-- card de servicos -->
         <?php require_once('template/servicos_card.php'); ?>
-       
+
         <div class="espaco"></div>
 
         <!-- escolha -->
@@ -201,7 +204,7 @@
 
         <!-- ki servicos  -->
         <?php require_once('template/servicos.php'); ?>
-        
+
 
         <div class="espaco"></div>
 
@@ -250,11 +253,54 @@
 
     </main>
 
-    
+
     <!-- footer -->
 
-    <?php require_once('template/final.php');?>
-    
+    <?php require_once('template/final.php'); ?>
+
+    <!-- modal -->
+    <div class="modal" id="modalLogin" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login - Kioficina</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form method="POST" action="http://localhost/kioficina/public/auth/login">
+                        <div class="mb-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" require>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" class="form-control" require>
+                        </div>
+                        <label for="tipo_usuario"> Tipo de tipo Usuário:</label>
+                        <div class="form-floating">
+
+                            <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" require>
+                                <option selected>Selecione</option>
+                                <option value="1">Cliente</option>
+                                <option value="2">Funcionário</option>
+
+                            </select>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -265,7 +311,20 @@
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script src="assets/js/lity.min.js"></script>
     <script src="https://kit.fontawesome.com/6a9aa14b39.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/oficina.js"></script>
+
+    <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
+
+        <script>
+            $(document).ready(function() {
+                $('#modalLogin').modal('show');
+            });
+        </script>
+
+    <?php endif; ?>
+
+
 </body>
 
 </html>
