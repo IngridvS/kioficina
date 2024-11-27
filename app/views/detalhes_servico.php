@@ -62,14 +62,14 @@
     </div>
     <!-- End common page title  -->
 
-    <!-- Start ALl Content -->
+    Start ALl Content
     <div class="ak-height-75 ak-height-lg-80"></div>
     <div class="d-flex justify-content-center">
         <div class="sticky-content container">
             <div class="content">
                 <div class="single-blog-list" data-aos="fade-up">
                     <h4 class="single-blog-title">AutoCare Solutions - Tire Services</h4>
-                    <p class="single-blog-desp">
+                  <p class="single-blog-desp">
                         At AutoCare Solutions, we understand that your tires are a critical component of your
                         vehicle's
                         performance, safety, and overall driving experience. Our tire services are designed to
@@ -89,7 +89,7 @@
                         Our technicians will rotate your tires according to your vehicle's specifications, promoting
                         balanced wear patterns and extending the life of your tires.</p>
                 </div>
-                <div class="single-blog-list" data-aos="fade-up">
+                  <div class="single-blog-list" data-aos="fade-up">
                     <h4 class="single-blog-title">2. Tire Balancing:</h4>
                     <p class="single-blog-desp">Imbalanced tires can lead to uneven wear, vibrations, and handling
                         issues. Our precision tire balancing services ensure that each tire and wheel assembly is

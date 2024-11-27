@@ -282,8 +282,8 @@
 
                             <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" require>
                                 <option selected>Selecione</option>
-                                <option value="1">Cliente</option>
-                                <option value="2">Funcionário</option>
+                                <option value="cliente">cliente</option>
+                                <option value="funcionario">funcionário</option>
 
                             </select>
 
@@ -314,15 +314,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/oficina.js"></script>
 
-    <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
+    <?php
+
+    if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
 
         <script>
             $(document).ready(function() {
                 $('#modalLogin').modal('show');
-            });
+            })
         </script>
 
-    <?php endif; ?>
+    <?php endif ?>
 
 
 </body>

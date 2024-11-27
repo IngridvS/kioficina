@@ -1,7 +1,14 @@
 <?php 
 
+session_start();
+
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+    
+}
+
 // definir url base da aplicação 
-define("BASE_URL","http://localhost/kioficina/");
+define("BASE_URL","http://localhost/kioficina/public/");
 // criar const
 
 //Confinguração do Data Base

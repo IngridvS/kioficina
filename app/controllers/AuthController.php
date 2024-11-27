@@ -14,28 +14,60 @@ class AuthController extends Controller{
             // var_dump($senha);
             // var_dump($tipo_usuario);
 
-            if($email && $senha && $tipo_usuario){
+            if($email && $senha && $tipo_usuario != "Selecione"){
 
-                if($tipo_usuario ==='Cliente'){
+                if ($tipo_usuario === 'cliente') {
                     $usuarioModel = new ClienteModel();
-                    
-                }elseif($tipo_usuario === 'Funcionário'){
+                    $usuario = $usuarioModel->buscarCliente($email);
+                    $campoSenha = 'senha_cliente';
+                    $campoId = 'id_cliente';
+                    $campoNome = 'nome_cliente';
+ 
+                } elseif ($tipo_usuario === 'funcionario') {
+                    $usuarioModel = new FuncionarioModel();
+                    $usuario = $usuarioModel->buscarFunc($email);
+                    $campoSenha = 'senha_funcionario';
+                    $campoId = 'id_funcionario';
+                    $campoNome = 'nome_funcionario';
+                }else{
+                    $usuario = null;
+                }
 
+                if($usuario && $usuario[$campoSenha] === $senha){
+                    // var_dump($usuario);
+                    $_SESSION['userId'] = $usuario[$campoId];
+                    $_SESSION['userTipo'] = $tipo_usuario;
+                    $_SESSION['userNome'] = $usuario[$campoNome];
+ 
+                    // redirecionar para a pag de dashbord
+                    // var_dump($usuario);
+                    header('Location: ' . BASE_URL . 'dashboard');
+                    exit;
+                }else{
+                    $_SESSION['login-erro'] = 'E-mail ou Senha Incorreta';
                 }
 
             }else{
                 // credenciais invalidas 
-                if($tipo_usuario === ""){
-                    $dados['msg'] = 'Tipo de usuario não informados';
-                    $dados['tipo_msg'] = 'erro-tipo-_usuario';
-                }else{
-                    $dados['msg'] = 'Email e Senha incorretas';
-                    $dados['tipo_msg'] = 'erro';
-                }
-               
+                $_SESSION['login-erro'] = 'Preencha todos os dados';
+                
             }
+            header('Location: ' . BASE_URL);
+            exit;
         }
 
-        $this->carregarViews('home', $dados);
+       header('Location: ' . BASE_URL);
+       exit;
     }
+
+    public function sair(){
+        session_unset();
+        session_destroy();
+        header('Location: ' . BASE_URL);
+        exit;
+        
+        
+    }
+
+
 }
