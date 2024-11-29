@@ -12998,7 +12998,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
+  height: 5.5rem;
   padding: 0.8125rem 0.5rem;
   overflow: hidden;
   font-size: 1.25rem;
@@ -13018,9 +13018,8 @@ textarea.form-control-lg {
 }
 .sidebar-brand .brand-link .brand-image {
   float: left;
-  width: auto;
-  max-height: 33px;
-  line-height: 0.8;
+    width: 100%;
+    height: 59px;
 }
 .sidebar-brand .brand-link .brand-image-xs {
   float: left;
@@ -13507,7 +13506,7 @@ textarea.form-control-lg {
     position: sticky;
     top: 0;
     bottom: 0;
-    max-height: 100vh;
+    max-height: 104vh;
   }
   .sidebar-expand-lg.layout-fixed .app-sidebar .sidebar-wrapper {
     height: calc(100vh - (calc(3.5rem + 1px)));
