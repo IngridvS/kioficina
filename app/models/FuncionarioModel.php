@@ -24,4 +24,16 @@ class FuncionarioModel extends Model
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
+
+
+  // public function funcionarioDash($limite = 1)
+  // {
+  //   $sql = "select nome_funcionario, foto_funcionario, alt_foto_funcionario, telefone_funcionario, cargo_funcionario from tbl_funcionario where status_funcionario = 'Ativo'";
+  //    $stmt = $this->db->prepare($sql);
+  //   // PDO::prepare — Prepara uma instrução para execução e retorna um objeto de instrução
+  //   $stmt->bindValue(':limite', (int)$limite, PDO::PARAM_INT);
+  //   //PDOStatement::bindValue — Vincula um valor a um parâmetro
+  //   $stmt->execute();
+  //   return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  // }
 }

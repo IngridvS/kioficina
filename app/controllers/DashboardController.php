@@ -21,5 +21,12 @@ class DashboardController extends Controller{
         $dados['tipoUser'] = $_SESSION['userTipo'];
 
         $this->carregarViews('dash/dashboard', $dados);
+
+        
+
+        // $funcionarioModel = new FuncionarioModel();
+        // $dadosFuncionario = $funcionarioModel->funcionarioDash();  //busca
+
+        // $dados['funcionariosDash'] = $dadosFuncionario;
     }
 }

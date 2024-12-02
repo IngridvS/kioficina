@@ -108,6 +108,7 @@
 
 
                     <li class="nav-item"> <a class="nav-link" href="#" data-lte-toggle="fullscreen"> <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i> <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i> </a> </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
+                    
                     <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="http://localhost/kioficina/public/vendors/dash/assets/img/user2-160x160.jpg" class="user-image rounded-circle shadow" alt="User Image"> <span class="d-none d-md-inline">ingrid</span> </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
                             <li class="user-header text-bg-primary"> <img src="http://localhost/kioficina/public/vendors/dash/assets/img/user2-160x160.jpg" class="rounded-circle shadow" alt="User Image">
@@ -118,13 +119,13 @@
                             </li> <!--end::User Image--> <!--begin::Menu Body-->
 
 
-                            <li class="user-body"> <!--begin::Row-->
-                                <div class="row">
-                                    <div class="col-4 text-center"> <a href="#">Followers</a> </div>
+                            <!-- <li class="user-body"> begin::Row-->
+                                <!--<div class="row">
+                                     <div class="col-4 text-center"> <a href="#">Followers</a> </div>
                                     <div class="col-4 text-center"> <a href="#">Sales</a> </div>
-                                    <div class="col-4 text-center"> <a href="#">Friends</a> </div>
-                                </div> <!--end::Row-->
-                            </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
+                                    <div class="col-4 text-center"> <a href="#">Friends</a> </div> -->
+                               <!-- </div> end::Row-->
+                            <!-- </li> end::Menu Body begin::Menu Footer --> 
 
 
                             <li class="user-footer"> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="http://localhost/kioficina/public/auth/sair" class="btn btn-default btn-flat float-end">Sair</a> </li> <!--end::Menu Footer-->
@@ -150,7 +151,7 @@
 
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-gear"></i>
                                 <p>
                                     Gestão de Serviços
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -170,7 +171,7 @@
                         </li>
 
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-people"></i>
                                 <p>
                                     Gestão de Cliente
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -185,7 +186,7 @@
                                     </a> </li>
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-clipboard-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-briefcase"></i>
                                 <p>
                                     Rercursos Humanos
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -198,7 +199,7 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-tree-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-truck"></i>
                                 <p>
                                     Fornecedores
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -216,7 +217,7 @@
 
 
                         <li class="nav-header">Site</li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-chat-left-text"></i>
                                 <p>
                                     Depoimento
 
@@ -224,7 +225,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-card-image"></i>
                                 <p>
                                     Banners
 
@@ -232,7 +233,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-envelope"></i> <!--<i class="nav-icon bi bi-box-arrow-in-right"></i> -->
                                 <p>
                                     Contato
 
@@ -240,7 +241,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-images"></i>
                                 <p>
                                     Galeria
 
@@ -248,25 +249,13 @@
                             </a>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-tags"></i>
                                 <p>
                                     Marcas
 
                                 </p>
                             </a>
                         </li>
-
-
-
-
-
-
-
-
-
-
-
-
 
                         <!-- 
                         <li class="nav-header">DOCUMENTATIONS</li>
@@ -394,7 +383,7 @@
                     </div> <!--end::Row-->
                 </div> <!--end::Container-->
 
-                
+
             </div> <!--end::App Content Header--> <!--begin::App Content-->
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
@@ -453,62 +442,67 @@
 
                     <div class="row"> <!-- Start col -->
 
-                        <table class="table">
-
-                            <thead>
-                                <tr>
-                                    <th scope="col" style="width: 10px">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Progress</th>
-                                    <th scope="col" style="width: 40px">Label</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Update software</td>
-                                    <td>
-                                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped" style="width: 55%"></div>
-                                        </div>
-                                    </td>
-                                    <td><span class="badge bg-red" style="background-color: red">55%</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Clean database</td>
-                                    <td>
-                                        <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped bg-success" style="width: 70%"></div>
-                                        </div>
-                                    </td>
-                                    <td><span class="badge bg-red" style="background-color: yellow; color:#000000 !important">70%</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cron job running</td>
-                                    <td>
-                                        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped bg-info" style="width: 30%"></div>
-                                        </div>
-                                    </td>
-                                    <td><span class="badge bg-red" style="background-color: blue">30%</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Fix and squish bugs</td>
-                                    <td>
-                                        <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-striped bg-warning" style="width: 90%"></div>
-                                        </div>
-                                    </td>
-                                    <td><span class="badge bg-red"  style="background-color: green">90%</span></td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
-
+                        <div class="col-md-6 w-100">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h3 class="card-title">Bordered Table</h3>
+                                </div> <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Task</th>
+                                                <th>Progress</th>
+                                                <th style="width: 40px">Label</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="align-middle">
+                                                <td>1.</td>
+                                                <td>Update software</td>
+                                                <td>
+                                                    <div class="progress progress-xs">
+                                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge text-bg-danger">55%</span></td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>2.</td>
+                                                <td>Clean database</td>
+                                                <td>
+                                                    <div class="progress progress-xs">
+                                                        <div class="progress-bar text-bg-warning" style="width: 70%"></div>
+                                                    </div>
+                                                </td>
+                                                <td> <span class="badge text-bg-warning">70%</span> </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>3.</td>
+                                                <td>Cron job running</td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar text-bg-primary" style="width: 30%"></div>
+                                                    </div>
+                                                </td>
+                                                <td> <span class="badge text-bg-primary">30%</span> </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>4.</td>
+                                                <td>Fix and squish bugs</td>
+                                                <td>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar text-bg-success" style="width: 90%"></div>
+                                                    </div>
+                                                </td>
+                                                <td> <span class="badge text-bg-success">90%</span> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- /.card-body -->
+                            </div> <!-- /.card -->
+                        </div> <!-- /.col -->
 
                         <!-- mapa -->
                         <!-- <div class="col-lg-5 connectedSortable">
@@ -547,11 +541,43 @@
             </div> <!--end::App Content-->
         </main> <!--end::App Main--> <!--begin::Footer-->
         <footer class="app-footer"> <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
-            </strong>
-            All rights reserved.
+
+
+            <div>
+                <div class="divisoes">
+                    <div>
+                        <h3>Ki Oficina</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum.</p>
+                    </div>
+                    <div class="links">
+                        <div>
+                            <ul>
+                                <li>k</li>
+                                <li>k</li>
+                                <li>k</li>
+                                <li>k</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>k</li>
+                                <li>k</li>
+                                <li>k</li>
+                                <li>k</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
+                    Copyright &copy; 2014-2024&nbsp;
+                    <a href="" class="text-decoration-none"></a>.
+                </strong>
+                All rights reserved.
+            </div>
+
             <!--end::Copyright-->
         </footer> <!--end::Footer-->
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->

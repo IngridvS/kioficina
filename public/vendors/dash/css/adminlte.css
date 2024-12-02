@@ -15396,4 +15396,34 @@ html.maximized-card {
   width: 32px;
 }
 
+
+.app-footer{
+  background: #032830;
+  width: 100%;
+  color: #fff;
+  height: 28vh;
+  line-height: 41px;
+  
+  .divisoes{ 
+    display: flex;
+
+    div{
+      h3{
+        font-size: 20pt;
+      }
+      p{
+        width: 68%;
+        line-height: 24px;
+      }
+    }
+
+    .links{
+      display: flex;
+      justify-content: space-between;
+      width: 23%;
+      
+    }
+  }
+}
+
 /*# sourceMappingURL=adminlte.css.map */
