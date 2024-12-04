@@ -19,7 +19,18 @@ class Servico extends Model
    
     //metodo listas tds os serviços ativos por ordem alfabetica 
 
-    public function getServicosOrdem() {// () não recebe nenhum tipo de parametro como acima
+    public function getTodosOrdem() {// () não recebe nenhum tipo de parametro como acima
+   
+        $sql = "select s.id_servico, s.nome_servico, s.descricao_servico, s.preco_base_servico, s.tempo_estimado_servico, s.id_especialidade, g.foto_galeria, g.alt_galeria from tbl_servico s inner join tbl_galeria g on s.id_servico = g.id_servico where status_servico = 'Ativo' ORDER BY nome_servico;";
+        $stmt = $this->db->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //fetchAll — Busca as linhas restantes de um conjunto de resultados
+        //PDO::FETCH_ASSOC: retorna uma matriz indexada pelo nome da coluna conforme retornado no seu conjunto de resultados
+    }
+
+
+    
+    public function getServicosOrdem() {
    
         $sql = "select nome_servico, descricao_servico, link_servico from tbl_servico where status_servico = 'Ativo' 
         ORDER BY nome_servico;";

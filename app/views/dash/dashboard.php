@@ -108,7 +108,7 @@
 
 
                     <li class="nav-item"> <a class="nav-link" href="#" data-lte-toggle="fullscreen"> <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i> <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i> </a> </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
-                    
+
                     <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="http://localhost/kioficina/public/vendors/dash/assets/img/user2-160x160.jpg" class="user-image rounded-circle shadow" alt="User Image"> <span class="d-none d-md-inline">ingrid</span> </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
                             <li class="user-header text-bg-primary"> <img src="http://localhost/kioficina/public/vendors/dash/assets/img/user2-160x160.jpg" class="rounded-circle shadow" alt="User Image">
@@ -120,12 +120,12 @@
 
 
                             <!-- <li class="user-body"> begin::Row-->
-                                <!--<div class="row">
+                            <!--<div class="row">
                                      <div class="col-4 text-center"> <a href="#">Followers</a> </div>
                                     <div class="col-4 text-center"> <a href="#">Sales</a> </div>
                                     <div class="col-4 text-center"> <a href="#">Friends</a> </div> -->
-                               <!-- </div> end::Row-->
-                            <!-- </li> end::Menu Body begin::Menu Footer --> 
+                            <!-- </div> end::Row-->
+                            <!-- </li> end::Menu Body begin::Menu Footer -->
 
 
                             <li class="user-footer"> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="http://localhost/kioficina/public/auth/sair" class="btn btn-default btn-flat float-end">Sair</a> </li> <!--end::Menu Footer-->
@@ -161,9 +161,15 @@
                                 <li class="nav-item"> <a href="./widgets/small-box.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                                         <p>Agendamento de Serviços</p>
                                     </a> </li>
-                                <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+
+
+                                <li class="nav-item"> <a href="http://localhost/kioficina/public/servico/listar" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                                         <p>Serviços</p>
                                     </a> </li>
+
+
+
+
                                 <li class="nav-item"> <a href="./widgets/cards.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                                         <p>Especialidades</p>
                                     </a> </li>
@@ -385,8 +391,14 @@
 
 
             </div> <!--end::App Content Header--> <!--begin::App Content-->
+
+
+
+
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
+
+
                     <div class="row"> <!--begin::Col-->
                         <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 1-->
                             <div class="small-box text-bg-primary">
@@ -399,6 +411,10 @@
                                     More info <i class="bi bi-link-45deg"></i> </a>
                             </div> <!--end::Small Box Widget 1-->
                         </div> <!--end::Col-->
+
+
+
+
                         <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 2-->
                             <div class="small-box text-bg-success">
                                 <div class="inner">
@@ -442,144 +458,99 @@
 
                     <div class="row"> <!-- Start col -->
 
-                        <div class="col-md-6 w-100">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h3 class="card-title">Bordered Table</h3>
-                                </div> <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Task</th>
-                                                <th>Progress</th>
-                                                <th style="width: 40px">Label</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="align-middle">
-                                                <td>1.</td>
-                                                <td>Update software</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge text-bg-danger">55%</span></td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>2.</td>
-                                                <td>Clean database</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar text-bg-warning" style="width: 70%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-warning">70%</span> </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>3.</td>
-                                                <td>Cron job running</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar text-bg-primary" style="width: 30%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-primary">30%</span> </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>4.</td>
-                                                <td>Fix and squish bugs</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar text-bg-success" style="width: 90%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-success">90%</span> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- /.card-body -->
-                            </div> <!-- /.card -->
-                        </div> <!-- /.col -->
+                        <?php
 
-                        <!-- mapa -->
-                        <!-- <div class="col-lg-5 connectedSortable">
-                            <div class="card text-white bg-primary bg-gradient border-primary mb-4">
-                                <div class="card-header border-0">
-                                    <h3 class="card-title">Sales Value</h3>
-                                    <div class="card-tools"> <button type="button" class="btn btn-primary btn-sm" data-lte-toggle="card-collapse"> <i data-lte-icon="expand" class="bi bi-plus-lg"></i> <i data-lte-icon="collapse" class="bi bi-dash-lg"></i> </button> </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="world-map" style="height: 220px"></div>
-                                </div>
-                                <div class="card-footer border-0"> begin::Row
-                                    <div class="row">
-                                        <div class="col-4 text-center">
-                                            <div id="sparkline-1" class="text-dark"></div>
-                                            <div class="text-white">Visitors</div>
-                                        </div>
-                                        <div class="col-4 text-center">
-                                            <div id="sparkline-2" class="text-dark"></div>
-                                            <div class="text-white">Online</div>
-                                        </div>
-                                        <div class="col-4 text-center">
-                                            <div id="sparkline-3" class="text-dark"></div>
-                                            <div class="text-white">Sales</div>
-                                        </div>
-                                    </div> end::Row
-                                </div>
-                            </div>
-                        </div> /.Start col -->
+                        if (isset($conteudo)) {
+                            $this->carregarViews($conteudo, $dados);
+                        } else {
+                            echo '<h2> Bem vindo dash </h2>';
+                        }
+
+
+                        ?>
+
+                    </div> <!-- /.col -->
 
 
 
 
-                    </div> <!-- /.row (main row) -->
-                </div> <!--end::Container-->
-            </div> <!--end::App Content-->
-        </main> <!--end::App Main--> <!--begin::Footer-->
-        <footer class="app-footer"> <!--begin::To the end-->
 
 
-            <div>
-                <div class="divisoes">
-                    <div>
-                        <h3>Ki Oficina</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum.</p>
-                    </div>
-                    <div class="links">
-                        <div>
-                            <ul>
-                                <li>k</li>
-                                <li>k</li>
-                                <li>k</li>
-                                <li>k</li>
-                            </ul>
-                        </div>
 
-                        <div>
-                            <ul>
-                                <li>k</li>
-                                <li>k</li>
-                                <li>k</li>
-                                <li>k</li>
-                            </ul>
-                        </div>
 
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div> <!-- /.row (main row) -->
+
+
+
+
+            </div> <!--end::Container-->
+    </div> <!--end::App Content-->
+
+
+
+
+    </main> <!--end::App Main--> <!--begin::Footer-->
+
+
+
+    <footer class="app-footer"> <!--begin::To the end-->
+
+
+        <div>
+            <div class="divisoes">
+                <div>
+                    <h3>Ki Oficina</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatum.</p>
                 </div>
-                <hr>
-                <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
-                    Copyright &copy; 2014-2024&nbsp;
-                    <a href="" class="text-decoration-none"></a>.
-                </strong>
-                All rights reserved.
-            </div>
+                <div class="links">
+                    <div>
+                        <ul>
+                            <li>k</li>
+                            <li>k</li>
+                            <li>k</li>
+                            <li>k</li>
+                        </ul>
+                    </div>
 
-            <!--end::Copyright-->
-        </footer> <!--end::Footer-->
+                    <div>
+                        <ul>
+                            <li>k</li>
+                            <li>k</li>
+                            <li>k</li>
+                            <li>k</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
+                Copyright &copy; 2014-2024&nbsp;
+                <a href="" class="text-decoration-none"></a>.
+            </strong>
+            All rights reserved.
+        </div>
+
+        <!--end::Copyright-->
+    </footer> <!--end::Footer-->
+
+
+
+
+
+
+
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
