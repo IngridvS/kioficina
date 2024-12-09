@@ -17,7 +17,8 @@
             <tr>
                 <th scope="row"><?php echo $linha['id_servico'] ?></th>
 
-                <td><a class="img_servico_dash" href="#">
+                <!-- data-lightbox="image-1" data-title="My caption" -->
+                <td><a class="img_servico_dash" href="#" >
                         <img src=" <?php
                                     $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/kioficina/public/uploads/" . $linha['foto_galeria'];
                                     if ($linha['foto_galeria'] != "") {
